@@ -6,7 +6,7 @@ by providing a basic explanation of how to do it easily.
 
 Look how easy it is to use:
 
-    import project
+    import projectw
     # Get your stuff done
     project.do_stuff()
 
