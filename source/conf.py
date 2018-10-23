@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'medbiz'
-copyright = '2018, ktj1312@gwnu.ac.kr'
-author = 'ktj1312@gwnu.ac.kr'
+copyright = '2018, kim teak jin'
+author = 'kim teak jin'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = ''
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,6 +39,7 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autodoc',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -129,7 +130,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'medbiz.tex', 'medbiz Documentation',
-     'ktj1312@gwnu.ac.kr', 'manual'),
+     'kim teak jin', 'manual'),
 ]
 
 
@@ -171,3 +172,6 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+
+# -- Extension configuration -------------------------------------------------
