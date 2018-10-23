@@ -1,41 +1,85 @@
-Template
-========
+MEDBIZ Wiki Developer Information
+=================================
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+위키의 작성을 위해서는 아래의 과정을 따라서 수행할 수 있습니다
 
-Look how easy it is to use:
+작성된 위키는 커밋이 되면 자동적으로 반영이 되어 실제 문서에 업데이트됩니다
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
+반영에는 다소 시간이 소요될 수 있습니다 (대부분 1분 이내)
 
-Features
---------
+`위키 사이트 <https://medbiz.readthedocs.io/en/latest/>`_
 
-- Be awesome
-- Make things faster
+목적
+----
 
-Installation
+본 위키 작성을 통해 사용자들에게 플랫폼의 사용법을 알리는데 목적이 있습니다
+
+특징
+----
+
+- readthedocs를 이용한 위키 호스팅
+- 사내 gitlab과의 연동을 통한 문서 관리
+- 사내 gitlab과의 연동을 통한 버전 관리
+- .rst 형식을 이용한 문서 작성
+
+요구됨
+------
+작성을 하고자 하시는 분들은 아래의 방법을 알고 계셔야 합니다
+
+필수
+
+- reStructuredText 문법
+
+추천
+
+- readthedocs 의 기본 구조 이해 `참조 <https://docs.readthedocs.io/en/latest/>`_
+- git 사용법 (약간의)
+- Sphinx 사용법
+
+개략적 동작 구조
+----------------
+
+1. .rst 형태의 파일로 문서를 작성 후 gitlab에 커밋을 하게 됩니다
+
+2. 커밋이 되면 gitlab은 webhook으로 readthedocs에 커밋이 되었음을 알립니다.
+
+3. readthedocs는 커밋 신호가 들어오면 해당 문서를 git에서 pull하여 html로 컴파일합니다
+
+4. 해당 문서가 호스팅됩니다.
+
+작성방법
 ------------
 
-Install $project by running:
+기본적으로는 로컬에서 작성한 .rst 형태의 문서를 gitlab에 커밋하는 것으로 끝이 나게됩니다.
 
-    install project
+작성은 온라인 reStructuredText editor를 이용하여도 됩니다.
 
-Contribute
-----------
+아래의 방법은 로컬에서 진행하는 방법입니다.
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+파이썬은 먼저 설치되어있어야 합니다
 
-Support
--------
+.. code-block:: console
+   :linenos:
+
+   pip install sphinx
+   git clone http://203.255.217.236:9009/medbiz/medbiz-user-guide.git
+   make html
+
+상기 과정을 수행하면 로컬에서 rst를 html로 컴파일 된 파일을 클릭하여 확인할 수 있습니다
+
+
+기여
+----
+
+- medbiz dev team
+
+문의
+-----
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+We have a mailing list located at: ktj1312@gwnu.ac.kr
 
 License
 -------
 
-The project is licensed under the BSD license.
+The project is licensed under the `medbizDevTeam <http://211.185.64.12:9003/>`_
