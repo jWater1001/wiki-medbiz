@@ -1,6 +1,5 @@
 Authors
 -------
 
-* Eric (New contributor)
-* Anthony 
-* Teak jin Kim
+MedbizDevTeams
+* ktj1312@gwnu.ac.kr

@@ -12,7 +12,15 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   *
+   overview
+   system_architecture
+   software_architecture
+   component_architecture
+   device
+   openapi
+   analysis
+   authors
+
 
 
 
