@@ -1,7 +1,5 @@
-========
-Usage
-========
+=======
+OpenAPI
+=======
 
-To use this template, simply update it::
-
-	import read-the-docs-template
+openAPI에 대한 설명

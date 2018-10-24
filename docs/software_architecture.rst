@@ -1,6 +1,6 @@
-========
-Usage
-========
+=====================
+Sofrware_Architecture
+=====================
 
 To use this template, simply update it::
 

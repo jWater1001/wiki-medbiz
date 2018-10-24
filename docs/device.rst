@@ -1,6 +1,5 @@
-========
-Usage
-========
+======
+Device
+======
 
 .. figure:: _static/CU.jpg
-:align: center

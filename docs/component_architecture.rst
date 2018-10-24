@@ -1,7 +1,5 @@
-========
-Usage
-========
+======================
+Component_Architecture
+======================
 
-To use this template, simply update it::
-
-	import read-the-docs-template
+컴포넌트 개략도
