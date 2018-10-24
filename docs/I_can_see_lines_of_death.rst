@@ -2,7 +2,7 @@
 test
 ======
 
-.. figure:: _static/CU.jpg
+.. figure:: _static/lines.jpg
 
 ======
 크큭... 선이보인다.
