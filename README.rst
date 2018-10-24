@@ -59,7 +59,6 @@ Building part of a book
 파이썬은 먼저 설치되어있어야 합니다
 
 .. code-block:: console
-   :linenos:
 
    pip install sphinx
    git clone http://203.255.217.236:9009/medbiz/medbiz-user-guide.git
