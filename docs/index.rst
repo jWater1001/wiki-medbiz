@@ -12,29 +12,27 @@ Medbiz 플랫폼 개발자 가이드입니다.
 
 웹 사이트는 `여기 <https://medbiz.readthedocs.io/en/latest/>`_ 에서 찾을 수 있습니다
 
-* 플랫폼 설명
-* 플랫폼 아키텍쳐
-* 인증
-* 디바이스 연동 방법
-* openAPI
-* 분석
-
-Contents:
+    * 플랫폼 설명
+    * 플랫폼 아키텍쳐
+    * 인증
+    * 디바이스 연동 방법
+    * openAPI
+    * 분석
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-   overview
-   system_architecture
-   software_architecture
-   component_architecture
-   device
-   openapi
-   analysis
-   authors
+    overview
+    system_architecture
+    software_architecture
+    component_architecture
+    device
+    api-reference
+    analysis
+    authors
 
-
-
+.. toctree::
+    :maxdepth: 3
 
 Indices and tables
 ==================
