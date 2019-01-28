@@ -36,4 +36,6 @@ OpenWeatherMap Site를 이용한 날씨 수집
 4. 사용할 API 주소를 선택하고 검색 조건을 입력한 후 발급받은 API Key를 추가 후 http 전송하면 Json 형태의 결과 값을 얻음
 5. 간단하게 웹 브라우저 (익스플로러, 크롬 등)에서 주소창에 입력후 결과 값 확인 가능 
 
+.. image:: docs/api/img/openweathermap_result.png
+
 - 발급 받은 API Key와 API 입력 값을 조합하여 웹 또는 앱에서 활용
