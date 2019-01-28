@@ -2,7 +2,7 @@
 OpenAPI를 활용한 날씨 수집
 ===============
 
-OpenWeatherMap
+OpenWeatherMap Site를 이용한 날씨 수집
 --------
 
 - 날씨를 수집하기 위해 OpenWeatherMap의 OpenAPI를 이용해 수집을 진행
