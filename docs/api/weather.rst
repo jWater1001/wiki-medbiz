@@ -26,5 +26,12 @@ OpenWeatherMap
 
 .. image:: docs/api/img/openweathermap_key.png
 
-- API Key 발급
+- API 활용
 1. 가입후 이메일 등록 절차가 완료 되면 Default API Key가 발급
+2. 활용할 API를 선정하고 API doc를 클릭하여 사용법을 확인
+
+.. image:: docs/api/img/openweathermap_api.png
+
+3. 현재 런던의 날씨 API를 받아 올 경우 : http://api.openweathermap.org/data/2.5/weather?q=London&appid=apiKey
+4. 사용할 API 주소를 선택하고 검색 조건을 입력한 후 발급받은 API Key를 추가 후 http 전송하면 Json 형태의 결과 값을 얻음
+5. 간단하게 웹 브라우저 (익스플로러, 크롬 등)에서 주소창에 입력후 결과 값 확인 가능
