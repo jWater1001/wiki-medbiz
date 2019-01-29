@@ -1,24 +1,27 @@
-===============
+=====================================
 OpenAPI를 활용한 미세먼지 데이터 수집
-===============
+=====================================
 
 Aqicn Site를 이용한 날씨 수집
---------
+-----------------------------
 
 - 미세먼지 데이터를 수집하기 위해 Aqicn의 OpenAPI를 이용해 수집을 진행
 
 .. image:: docs/api/img/aqicn.png
 
 - OpenAPI 활용 순서
+
 1. token 발급
 2. token을 이용해 API 활용
 
 - Token 발급
+
 1. Token 발급은 Aqicn 홈페이지에서 진행 : `Aqicn 홈페이지 발급 <http://aqicn.org/data-platform/token/#/>`_.
 2. 이메일과 이름을 입력하고 발급 신청하면 입력한 이메일 주소로 확인 메일 발송
 3. 확인 메일 링크 클릭시 Token 확인 후 Token 정보를 따로 저장
 
 - API 활용
+
 1. 발급 받은 토큰 정보를 URI에 추가하여 사용
 2. 활용할 API를 선정 : `API 종류 <http://aqicn.org/json-api/doc/#api-_>`_.
 
