@@ -1,5 +1,5 @@
 ===============
-OpenAPI를 활용한 날씨 수집
+OpenAPI를 활용한 날씨 데이터 수집
 ===============
 
 OpenWeatherMap Site를 이용한 날씨 수집
