@@ -30,6 +30,7 @@ Medbiz 플랫폼 개발자 가이드입니다.
     api-reference
     analysis
     authors
+    /api/weather
 
 .. toctree::
     :maxdepth: 3
