@@ -26,9 +26,7 @@ Medbiz 플랫폼 개발자 가이드입니다.
     api/guide
     analysis/guide
     authors
-
-.. toctree::
-    :maxdepth: 3
+    developer/guide
 
 Indices and tables
 ==================

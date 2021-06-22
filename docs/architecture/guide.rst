@@ -3,13 +3,13 @@
 =============
 
 
-System Architecture
+시스템 아키텍쳐
 --------
 
 
-Component Architecture
+컴포넌트 아키텍쳐
 -----------
 
 
-Software Architecture
+소프트웨어 아키첵쳐
 -----------

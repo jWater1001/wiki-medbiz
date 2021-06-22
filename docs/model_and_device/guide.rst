@@ -5,7 +5,7 @@
 .. tip::
 
     MEDBIZ 플랫폼에 제품을 연동하려면 우선 개발자 등록을 필요로 합니다.
-    `여기 <https://medbiz-user-guide.readthedocs.io/ko/latest/oauth2.html/>`_ 을 확인하여 token을 얻고 사용하는 방법을 익힐 수 있습니다.
+    `여기<https://medbiz-user-guide.readthedocs.io/ko/latest/oauth2.html/>`_ 를 참조하여 개발자 등록을 진행할 수 있습니다.
 
 
 절차

@@ -1,5 +1,5 @@
 ========
-Overview
+MEDBIZ Platform 이란?
 ========
 
-오버뷰
+사업내용 소개 작성
