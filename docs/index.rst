@@ -29,7 +29,7 @@ MEDBID 소개
 .. toctree::
     :maxdepth: 1
 
-    model_and_device/guide
+    model/guide
 
 API
 ***********************
