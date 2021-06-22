@@ -64,15 +64,26 @@
 ------------------
     플랫폼에 제품의 Manifest 등록하기 위한 절차를 설명합니다
 
+    제품의 Manifest는 예를 들어 온습도계와 같은 장비 모델을 등록했을 때, 온도, 습도에 대한 데이터에 대한 별도의 메타데이터 정보를 기입함으로
+    써 데이터 조회 시 용이하게 사용할 수 있습니다.
+
+    우선 등록한 제품의 제품 정보화면에서 아래의 그림과 같이 매니페스트 생성 버튼을 클릭합니다.
+
     |Create Manifest Image|
 
-    |Input Manifest Image|
+    Field Name은 수집하고자 하는 데이터의 이름을 설정하고, Description은 수집하고자 하는 데이터의 부가적인 설명을 기입합니다.
 
     |Input Manifest Image|
+
+    데이터 별로 미리 설정된 파라미터를 선택하기 위해 아래 그림의 + 버튼을 클릭합니다.
 
     |Create Parameter Image|
 
+    수집하고자 하는 데이터의 성격과 비슷한 파라미터를 고르거나 없는 경우는 별도의 신규 파라미터 신청 후, 파라미터를 선택합니다.
+
     |Select Parameter Image|
+
+    추가할 데이터 필드나 파라미터가 없는 경우 Activate 버튼을 눌러 제품의 Manifest 정보 입력을 완료합니다.
 
     |Activate Parameter Image|
 
