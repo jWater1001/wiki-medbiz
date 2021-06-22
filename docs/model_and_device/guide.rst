@@ -33,5 +33,5 @@
     model_and_device/guide
     api/guide
     analysis/guide
-    authors
     developer/guide
+    authors
