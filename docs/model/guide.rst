@@ -21,7 +21,7 @@
 .. tip::
     MEDBIZ 플랫폼에 제품을 등록하기 위해 등록에 필요한 정보를 미리 준비해주세요.
 
-.. image:: model/img/enrollment.png
+.. image:: enrollment.png
     :height: 250
     :width: 250
     :scale: 100
