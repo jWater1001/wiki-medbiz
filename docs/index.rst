@@ -25,7 +25,7 @@ Medbiz 플랫폼 개발자 가이드입니다.
     model_and_device/guide
     api/guide
     analysis/guide
-    authors/guide
+    authors
 
 .. toctree::
     :maxdepth: 3
