@@ -10,23 +10,54 @@ Medbiz 플랫폼 개발자 가이드입니다.
 
 본 가이드는 아래의 내용들을 포함하고 있습니다.
 
-1. 플랫폼 소개
-2. 플랫폼 아키텍쳐
-3. 인증
-4. 디바이스 등록 및 연동
-5. MEDBIZ API
-6. 분석
-
+MEDBID 소개
+***********************
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     overview
+
+아키텍쳐
+***********************
+.. toctree::
+    :maxdepth: 1
+
     architecture/guide
+
+제품 관리
+***********************
+.. toctree::
+    :maxdepth: 1
+
     model_and_device/guide
+
+API
+***********************
+.. toctree::
+    :maxdepth: 1
+
     api/guide
+
+Get Started
+***********************
+.. toctree::
+    :maxdepth: 1
+
     analysis/guide
-    authors
+
+개발자 등록
+***********************
+.. toctree::
+    :maxdepth: 1
+
     developer/guide
+
+저자
+***********************
+.. toctree::
+    :maxdepth: 1
+
+    authors
 
 Indices and tables
 ==================
