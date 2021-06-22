@@ -60,7 +60,6 @@
 .. image:: model_and_device/img/제품등록.png
 
 
-
 제품 Manifest 등록
 *******************
     플랫폼에 제품의 Manifest 등록하기 위한 절차를 설명합니다
