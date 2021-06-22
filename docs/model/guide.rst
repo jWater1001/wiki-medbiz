@@ -69,8 +69,7 @@
     플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 설명합니다
 
 
-.. |Device Enrollment Image| image:: _static/enrollment.png
+.. |Device Enrollment Image| image:: /_static/enrollment.png
     :height: 250
     :width: 250
     :scale: 100
-    :alt: 이미지 설명
