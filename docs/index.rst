@@ -3,69 +3,50 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MEDBIZ Developer Guide!
+MEDBIZ 사용자 가이드
 ==================================
-
-Medbiz 플랫폼 개발자 가이드입니다.
-
-본 가이드는 아래의 내용들을 포함하고 있습니다.
 
 MEDBID 소개
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    overview
-
-아키텍쳐
-***********************
-.. toctree::
-    :maxdepth: 1
-
-    architecture/guide
+    introduce
     
 MEDBIZ로 로그인
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    login/overview
-    login/api
+    login
 
 제품 관리
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    model/guide
+    product
 
 API
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    api/guide
+    api
 
-Get Started
+Analysis
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    analysis/guide
+    analysis
 
 개발자 등록
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    developer/guide
-
-저자
-***********************
-.. toctree::
-    :maxdepth: 1
-
-    authors
+    developer
 
 Indices and tables
 ==================

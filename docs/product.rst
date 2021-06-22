@@ -108,7 +108,7 @@
 .. |Activate Parameter Image| image:: /_static/activate_manifest.png
     :scale: 100
 
-.. |Enroll Device Image| image:: /_static/enroll_parameter.png
+.. |Enroll Device Image| image:: /_static/enroll_device.png
     :scale: 100
-.. |Check Device Image| image:: /_static/check_manifest.png
+.. |Check Device Image| image:: /_static/check_device.png
     :scale: 100
