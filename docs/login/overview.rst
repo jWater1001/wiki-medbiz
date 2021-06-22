@@ -5,11 +5,11 @@
 MEDBIZ 로그인은 Oauth2.0 기반의 사용자 인증 기능을 제공해 MEDBIZ의 사용자 인증 기능을 이용할 수 있게 하는 서비스입니다.
 
 
-.. image:: docs/login/img/medbiz01.png
+.. image:: ./img/medbizid01.png
 
 MEDBIZ 아이디로 로그인을 통해 로그인하는 기본 절차는 다음과 같습니다.
 
-.. image:: docs/login/img/medbiz02.png
+.. image:: ./img/medbizid02.png
 
 1. 주요 기능
 
