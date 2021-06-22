@@ -13,20 +13,14 @@
 * `제품 Manifest 등록`_
 * `제품의 디바이스 생성`_
 
+.. tip::
+    MEDBIZ 플랫폼에 제품을 등록하기 위해 등록에 필요한 정보를 미리 준비해주세요.
+
 ---------
 제품 등록
 ---------
     플랫폼에 제품을 등록하기 위한 절차를 설명합니다.
-
-.. tip::
-    MEDBIZ 플랫폼에 제품을 등록하기 위해 등록에 필요한 정보를 미리 준비해주세요.
-
-.. image:: enrollment.png
-    :height: 250
-    :width: 250
-    :scale: 100
-    :alt: 이미지 설명
-
+    |Device Enrollment Image|
 
 제품 이름
 -----------------
@@ -74,3 +68,9 @@
 ------------------
     플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 설명합니다
 
+
+.. |Device Enrollment Image| image:: _static/enrollment.png
+    :height: 250
+    :width: 250
+    :scale: 100
+    :alt: 이미지 설명
