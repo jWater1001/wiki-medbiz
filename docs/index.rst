@@ -23,6 +23,9 @@ Medbiz 플랫폼 개발자 가이드입니다.
     overview
     architecture/guide
     model_and_device/guide
+    model_and_device/model
+    model_and_device/manifest
+    model_and_device/device
     api/guide
     analysis/guide
     authors
