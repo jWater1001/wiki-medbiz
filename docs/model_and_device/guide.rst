@@ -23,11 +23,3 @@
 ------------------
     플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 `설명 <https://medbiz-user-guide.readthedocs.io/ko/latest/model_and_device/device.html>`_ 합니다.
 
-
-.. toctree::
-    :maxdepth: 2
-
-    model
-    manifest
-    device
-
