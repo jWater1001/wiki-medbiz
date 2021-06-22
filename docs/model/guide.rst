@@ -21,7 +21,7 @@
 ---------
     플랫폼에 제품을 등록하기 위한 절차를 설명합니다.
 
-    |Device Enrollment Image|
+    |Enroll Device Model Image|
 
 제품 이름
 -----------------
@@ -29,11 +29,11 @@
 
 중복 등록
 -----------------
-    플랫폼에 등록하려는 제품이 여러 유저에게 등록되어 사용할 수 있도록 하는 경우 선택할 수 있습니다.
+    제품이 여러 유저에게 등록되어 사용할 수 있도록 하는 경우 선택할 수 있습니다.
 
 모델 코드
 -----------------
-    중복 등록은 해당 제품이 여러 유저에게 등록되어 사용할 수 있도록 하는경우 선택할 수 있습니다.
+     모델 코드는 제품의 브랜드명이아닌 귀사의 관리체계에 있는 코드명을 의미합니다. ex) SAMSUNG Galaxy S10 => SM-G975N
 
 제조사
 -----------------
@@ -64,11 +64,33 @@
 ------------------
     플랫폼에 제품의 Manifest 등록하기 위한 절차를 설명합니다
 
+    |Create Manifest Image|
+
+    |Input Manifest Image|
+
+    |Input Manifest Image|
+
+    |Create Parameter Image|
+
+    |Select Parameter Image|
+
+    |Activate Parameter Image|
+
 ------------------
 제품의 디바이스 생성
 ------------------
     플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 설명합니다
 
 
-.. |Device Enrollment Image| image:: /_static/enrollment.png
+.. |Enroll Device Model Image| image:: /_static/enroll_model.png
+    :scale: 100
+.. |Create Manifest Image| image:: /_static/create_manifest.png
+    :scale: 100
+.. |Input Manifest Image| image:: /_static/input_manifest.png
+    :scale: 100
+.. |Create Parameter Image| image:: /_static/create_parameter.png
+    :scale: 100
+.. |Select Parameter Image| image:: /_static/select_parameter.png
+    :scale: 100
+.. |Activate Parameter Image| image:: /_static/activate_manifest.png
     :scale: 100
