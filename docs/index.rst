@@ -18,7 +18,7 @@ Medbiz 플랫폼 개발자 가이드입니다.
 6. 분석
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     overview
     architecture/guide
