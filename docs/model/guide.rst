@@ -81,11 +81,22 @@
 ------------------
 제품의 디바이스 생성
 ------------------
-    플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 설명합니다
+    플랫폼에 등록된 제품의 디바이스를 추가하기 위한 절차를 설명합니다.
 
+    등록젠 제품에 디바이스를 등록할 때 선택사항으로 제품의 일련번호 및 Mac 주소 정보를 기입합니다.
+
+    제품의 일련번호와 Mac 주소를 사용하면 애플리케이션에서 같은 모델의 디바이스를 여러개 사용하는 경우 플랫폼에 등록된
+    디바이스와 정보를 매칭하기가 쉬워집니다.
+
+    |Enroll Device Image|
+
+    제품에 등록된 디바이스는 아래와 같이 MUID, Secret, SerialNumber, Mac Address, 등록여부, 생성일과 같은 정보를 확인할 수 있습니다.
+
+    |Check Device Image|
 
 .. |Enroll Device Model Image| image:: /_static/enroll_model.png
     :scale: 100
+
 .. |Create Manifest Image| image:: /_static/create_manifest.png
     :scale: 100
 .. |Input Manifest Image| image:: /_static/input_manifest.png
@@ -95,4 +106,9 @@
 .. |Select Parameter Image| image:: /_static/select_parameter.png
     :scale: 100
 .. |Activate Parameter Image| image:: /_static/activate_manifest.png
+    :scale: 100
+
+.. |Enroll Device Image| image:: /_static/enroll_parameter.png
+    :scale: 100
+.. |Check Device Image| image:: /_static/check_manifest.png
     :scale: 100
