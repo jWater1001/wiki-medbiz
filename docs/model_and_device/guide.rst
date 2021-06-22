@@ -4,6 +4,20 @@
 
 .. tip::
 
+    MEDBIZ 플랫폼에 제품을 연동하려면 우선 개발자 등록을 필요로 합니다.
+    `여기 <https://medbiz-user-guide.readthedocs.io/ko/latest/oauth2.html/>`_ 을 확인하여 token을 얻고 사용하는 방법을 익힐 수 있습니다.
+
+
+절차
+--------
+    디바이스를 플랫폼에 연동하는 절차는 다음과 같은 절차로 구성되어 있습니다.
+    1. 제품 등록
+    2. 제품 속성(Manifest) 등록
+    3. 제품의 디바이스 생성
+    4. 플랫폼 연동
+
+.. tip::
+
     모든 medbiz 플랫폼의 API 호출은 access token을 필요로 합니다.
     `여기 <https://medbiz-user-guide.readthedocs.io/ko/latest/oauth2.html/>`_ 을 확인하여 token을 얻고 사용하는 방법을 익힐 수 있습니다.
 

@@ -3,29 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Medbiz Developer Guide!
+Welcome to MEDBIZ Developer Guide!
 ==================================
 
 Medbiz 플랫폼 개발자 가이드입니다.
 
 본 가이드는 아래의 내용들을 포함하고 있습니다.
 
-웹 사이트는 `여기 <https://medbiz.readthedocs.io/>`_ 에서 찾을 수 있습니다
-
- * 플랫폼 소개
- * 플랫폼 아키텍쳐
- * 인증
- * 디바이스 등록 및 연동
- * openAPI
- * 분석
+1. 플랫폼 소개
+2. 플랫폼 아키텍쳐
+3. 인증
+4. 디바이스 등록 및 연동
+5. MEDBIZ API
+6. 분석
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     overview
-    architecture/guide_system
-    architecture/guide_software
-    architecture/guide_component
+    architecture/guide
     model_and_device/guide
     api/guide
     analysis/guide
