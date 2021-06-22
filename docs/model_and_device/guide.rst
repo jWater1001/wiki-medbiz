@@ -25,18 +25,3 @@
     지원하는 API들을 여기를 통해 테스트를 진행해 볼 수 있습니다.
     API들을 테스트하기 위해서는 플랫폼에 로그인을 하여야 합니다.
     만약 계정이 없다면 회원가입을 진행 후 사용하실 수 있습니다.
-
-
-.. toctree::
-    :maxdepth: 1
-
-    overview
-    architecture/guide
-    model_and_device/guide
-    model_and_device/manifest
-    model_and_device/model
-    model_and_device/device
-    api/guide
-    analysis/guide
-    authors
-    developer/guide
