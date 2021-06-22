@@ -1,7 +1,3 @@
 =====================
-Sofrware_Architecture
+소프트웨어 아키텍쳐
 =====================
-
-To use this template, simply update it::
-
-	import read-the-docs-template
