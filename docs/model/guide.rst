@@ -20,6 +20,7 @@
 제품 등록
 ---------
     플랫폼에 제품을 등록하기 위한 절차를 설명합니다.
+
     |Device Enrollment Image|
 
 제품 이름
@@ -70,6 +71,4 @@
 
 
 .. |Device Enrollment Image| image:: /_static/enrollment.png
-    :height: 250
-    :width: 250
     :scale: 100
