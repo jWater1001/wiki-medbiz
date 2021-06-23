@@ -1,7 +1,14 @@
 =============
-개요
+MEDBIZ 로그인
 =============
 
+* `개요`_
+* `API 명세`_
+* `MEDBIZ 회원 프로필 조회 API 명세`_
+
+---------
+개요
+---------
 MEDBIZ 로그인은 Oauth2.0 기반의 사용자 인증 기능을 제공해 MEDBIZ의 사용자 인증 기능을 이용할 수 있게 하는 서비스입니다.
 
 
@@ -42,11 +49,9 @@ MEDBIZ 아이디로 로그인을 이용하기 위한 정보를 확인하고 등�
 
 - `oauth2.0 <https://oauth.net/>`_
 
-
-=============
+---------
 API 명세
-=============
-
+---------
 'MEDBIZ 아이디로 로그인 API는 MEDBIZ 로그인 인증 요청 API, 접근 토큰 발급/갱신/삭제 요청API로 구성되어 있습니다. 
 MEDBIZ 로그인 인증 요청 API는 여러분의 웹 또는 앱에 MEDBIZ 로그인 화면을 띄우는 API입니다. 이용자가 MEDBIZ 회원 인증에 
 성공하면 API로부터 받은 code 값을 이용해서 접근 토큰 발급 요청 API를 호출합니다. 접근 토큰 발급 요청 API를 통해 받은 
@@ -167,25 +172,25 @@ AccessToken 값은 일부 특수문자가 포함되어 있기 때문에 GET Para
 
 .. code::
 
-    https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=jyvqXeaVOVmV&redirect_uri=http%3A%2F%2Fservice.redirect.url%2Fredirect&state=hLiDdL2uhPtsftcU
+    https://auth.medbiz.or.kr/oauth/authorize?response_type=code&client_id=jyvqXeaVOVmV&redirect_uri=http%3A%2F%2Fservice.redirect.url%2Fredirect&state=hLiDdL2uhPtsftcU
                         
 6.1.2. 접근 토큰 발급 요청
 
 .. code::
 
-    https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&code=EIc5bFrl4RibFls1&state=9kgsGTfH4j7IyAkg
+    https://auth.medbiz.or.kr/oauth/token?grant_type=authorization_code&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&code=EIc5bFrl4RibFls1&state=9kgsGTfH4j7IyAkg
                         
 6.1.3. 접근 토큰 갱신 요청
 
 .. code::
 
-    https://nid.naver.com/oauth2.0/token?grant_type=refresh_token&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&refresh_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLn
+    https://auth.medbiz.or.kr/oauth/token?grant_type=refresh_token&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&refresh_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLn
                         
 6.1.4. 접근 토큰 삭제 요청
 
 .. code::
 
-    https://nid.naver.com/oauth2.0/token?grant_type=delete&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&access_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLnaoETis9YzjfnorlQwEisqemfpKHUq2gY&service_provider=NAVER
+    https://auth.medbiz.or.kr/oauth/token?grant_type=delete&client_id=jyvqXeaVOVmV&client_secret=527300A0_COq1_XV33cf&access_token=c8ceMEJisO4Se7uGCEYKK1p52L93bHXLnaoETis9YzjfnorlQwEisqemfpKHUq2gY&service_provider=NAVER
                         
 6.2 응답 예시
 6.2.1. MEDBIZ 아이디로 로그인 인증 요청
@@ -224,10 +229,9 @@ AccessToken 값은 일부 특수문자가 포함되어 있기 때문에 GET Para
         "result":"success"
     }  
 
-=============
+---------
 MEDBIZ 회원 프로필 조회 API 명세
-=============
-
+---------
 MEDBIZ 로그인을 통해 인증받은 받고 정보 제공에 동의한 회원에 대해 회원 메일 주소, 닉네임, 생일, 이름, 성별 값을 조회할 수 있는 로그인 오픈 API입니다. 기존 REST API처럼 요청 URL과 요청 변수로 호출하는 방법은 동일하나, 
 OAuth 2.0 인증 기반이므로 추가적으로 MEDBIZ 로그인 API를 통해 접근 토큰(access token)을 발급받아, HTTP로 호출할 때 Header에 접근 토큰 값을 전송해 주시면 활용 가능합니다.
 
@@ -242,7 +246,7 @@ API 권한 설정: '내 OauthClient'의 'API 권한관리' 탭에서 사용하�
 ======  ============  =====================================   =======   ===========================
 메서드     인증 요청       URL 출력                              포맷        설명
 ======  ============  =====================================   =======   ===========================
-GET       OAuth 2.0    https://openapi.naver.com/v1/nid/me     JSON       MEDBIZ 회원 프로필 조회
+GET       OAuth 2.0    https://auth.medbiz.or.kr/user/me       JSON       MEDBIZ 회원 프로필 조회
 ======  ============  =====================================   =======   ===========================
 
 3. 요청 변수
@@ -266,5 +270,6 @@ userId        string       Y            플랫폼에 등록된 유저의 아이�
 email         string       Y            플랫폼에 등록된 유저의 이메일입니다.
 userName      string       Y            플랫폼에 등록된 유저의 이름입니다.
 birthDay      string       Y            플랫폼에 등록된 유저의 생일입니다.
-gender        string       Y            플랫폼에 등록된 유저의 성별입니다. MALE : 남자 FEMALE : 여자, UNKNOWN : 알수없음
+gender        string       Y            플랫폼에 등록된 유저의 성별입니다. 
+                                        MALE : 남자 FEMALE : 여자, UNKNOWN : 알수없음
 ===========  =========  ============  =====================
