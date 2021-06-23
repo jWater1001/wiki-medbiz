@@ -27,7 +27,7 @@ MEDBIZ로 로그인
 
     product
 
-OneM2M
+oneM2M
 ***********************
 .. toctree::
     :maxdepth: 1
