@@ -4,15 +4,25 @@ oneM2M (HTTP)
 
 디바이스에서 생성된 데이터를 oneM2M 표준을 이용하여 저장/조회하는 기능을 소개합니다.
 
+.. tip::
+    MEDBIZ 플랫폼에 디바이스 데이터를 전송하기위해서는 제품, Manifest, 디바이스 등록을 먼저 `수행 <https://medbiz-user-guide.readthe
+    docs.io/ko/latest/product.html>`_ 해야합니다.
+
+    등록된 디바이스의 DeviceMuid와 DeviceSecret을 이용하여 oneM2M 표준을 이용하여 데이터를 전송/조회합니다.
+
+* `개요`_
 * `데이터 생성`_
 * `데이터 조회`_
 * `참고 문서 또는 사이트`_
 
-.. tip::
-    MEDBIZ 플랫폼에 제품을 등록하기 위해 등록에 필요한 정보를 미리 준비해주세요.
+-------------
+개요
+-------------
 
+    MEDBIZ Platform에서는 디바이스 데이터를 관리하기 위해 데이터 표준으로 oneM2M을 사용합니다. 해당 표준을 이용하여 데이터를 수집하고
+    조회 및 삭제를 할 수 있는 API를 제공합니다. 보다 더 구체적인 표준 명세를 확인 하기위해서는 `이곳 <https://www.onem2m.org/technical
+    /published-specifications/release-3>`_ 을 참조합니다.
 
-.. contents:: 목차
 
 -------------
 데이터 생성
