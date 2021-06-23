@@ -20,6 +20,13 @@ MEDBIZ로 로그인
 
     login
 
+API
+***********************
+.. toctree::
+    :maxdepth: 1
+
+    api
+
 제품 관리
 ***********************
 .. toctree::
@@ -34,12 +41,6 @@ oneM2M
 
     onem2m
 
-API
-***********************
-.. toctree::
-    :maxdepth: 1
-
-    api
 
 Analysis
 ***********************
@@ -48,12 +49,12 @@ Analysis
 
     analysis
 
-개발자 등록
+개발 자료
 ***********************
 .. toctree::
     :maxdepth: 1
 
-    developer
+    dev_guide
 
 Indices and tables
 ==================

@@ -1,5 +1,5 @@
 ========
-MEDBIZ Platform 이란?
+MEDBIZ Platform
 ========
 
-사업내용 소개 작성
+`MEDBIZ 홈페이지 <https://medbiz-user-guide.readthedocs.io/ko/latest/login.html>`_ 에서 확인하실 수 있습니다.
