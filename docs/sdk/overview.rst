@@ -67,3 +67,13 @@ Android API Level   23 - 30
 AuthenticationActivity -> OAuthClient 객체 생성 코드 참조
 해당 객체를 생성할 때, 개발자 사이트에서 만들었던 OAuth 클라이언트 정보를 객체에 생성자로 기입한다. ( 인증 관리 페이지 참고 )
 
+.. panels::
+    :column: col-lg-4 p-2
+
+    .. figure:: static/MedbizSample.png
+
+    ---
+    :column: col-lg-8 p-2
+    :body: text-left
+
+    panel 2 footerfadsfasdfasdfasdfsadf
