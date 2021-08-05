@@ -91,16 +91,18 @@ AuthenticationActivity -> OAuthClient 객체 생성 코드 참조
     소스 설명
     ^^^^^^^
 
-    .. code-block:: java
+    .. code:: java
 
-    private OAuthClient oAuthClientForPassword = new OAuthClient(
-        new OAuthClientInformation(
-            "발급 받은 OAuth Client ID",
-            "발급 받은 Oauth Client Secret",
-            "http://localhost/auth",
-            "profile device",
-            "token",
-            "password"));
+        private OAuthClient oAuthClientForPassword = new OAuthClient(
+            new OAuthClientInformation(
+                "발급 받은 OAuth Client ID",
+                "발급 받은 Oauth Client Secret",
+                "http://localhost/auth",
+                "profile device",
+                "token",
+                "password"
+            )
+        );
 
     ---
     :column: col-lg-12 p-1
