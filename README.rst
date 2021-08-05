@@ -36,6 +36,10 @@ Optinal
 - git 사용법 (약간의)
 - Sphinx 사용법
 
+Sphinx 빌드할 때  패키지 에러 발생시 플러그인을 설치해주세요.
+
+- pip install -r requirements.txt
+
 Structure
 ---------
 
