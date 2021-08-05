@@ -57,8 +57,20 @@ Android API Level   23 - 30
 
 의 기능을 제공하고 별도로 디바이스 연계기능이 포함된 샘플앱을 제공합니다.
 
-   .. figure:: static/MedbizSample.png
-   .. figure:: static/SDKSample.png
+.. panels::
+    :body: text-center
+    :header: text-center
+
+    :column: + p-1
+    SDK Sample App 화면
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    .. figure:: static/SDKSample.png
+
+    ---
+    :column: + p-1
+    MEDBIZ Sample App 화면
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    .. figure:: static/MedbizSample.png
 
 1. OAuth 2.0
 ===============
@@ -68,12 +80,28 @@ AuthenticationActivity -> OAuthClient 객체 생성 코드 참조
 해당 객체를 생성할 때, 개발자 사이트에서 만들었던 OAuth 클라이언트 정보를 객체에 생성자로 기입한다. ( 인증 관리 페이지 참고 )
 
 .. panels::
-    :column: col-lg-4 p-2
+    :container:
 
-    .. figure:: static/MedbizSample.png
+    :column: col-lg-4 col-md-4 col-sm-4 p-2
+    OAuth Client 설정
+    ^^^^^^^
+    .. figure:: static/OAuth_1.png
+    ---
+    :column: col-lg-8 col-md-8 col-sm-8 p-2
+    소스 설명
+    ^^^^^^^
+
+    .. code-block:: java
+
+    private OAuthClient oAuthClientForPassword = new OAuthClient(
+        new OAuthClientInformation(
+            "발급 받은 OAuth Client ID",
+            "발급 받은 Oauth Client Secret",
+            "http://localhost/auth",
+            "profile device",
+            "token",
+            "password"));
 
     ---
-    :column: col-lg-8 p-2
-    :body: text-left
-
-    panel 2 footerfadsfasdfasdfasdfsadf
+    :column: col-lg-12 p-1
+    panel4
