@@ -12,6 +12,8 @@ MEDBIZ 가이드
 ---------------------------
 
 .. toctree::
+    :caption: 메렁메렁
+    :name: 이건이름이레여
     :maxdepth: 2
 
     introduce/introduce
