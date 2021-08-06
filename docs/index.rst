@@ -45,7 +45,9 @@ MEDBIZ 디바이스 및 서비스 활용
 .. toctree::
     :maxdepth: 1
 
-    
+    dev_and_service/application
+    dev_and_service/onem2m
+    dev_and_service/newone
 
 ---------------------------
 MEDBIZ로 로그인
@@ -128,7 +130,7 @@ Analysis
     :maxdepth: 1
 
     sdk/overview
-    
+
 ---------------------------
 Indices and tables
 ---------------------------

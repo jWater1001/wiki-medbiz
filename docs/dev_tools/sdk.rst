@@ -23,9 +23,9 @@ SDK 및 샘플앱
 =========  ============  ===================  ==================================
 날짜        플랫폼         종류                  다운로드
 =========  ============  ===================  ==================================
-20201112   안드로이드      SDK, 예제용 앱        `ANDROID_MOBILE_SDK_20201112 <static/ANDROID_MOBILE_SDK_20201112.zip>`_
+20201112   안드로이드      SDK, 예제용 앱        `ANDROID_MOBILE_SDK_20201112 <static/sdk/ANDROID_MOBILE_SDK_20201112.zip>`_
 ---------  ------------  -------------------  ----------------------------------
-20201113   안드로이드      SDK, 샘플용 앱        `MEDBIZ_Sample_App <static/Medbiz.zip>`_
+20201113   안드로이드      SDK, 샘플용 앱        `MEDBIZ_Sample_App <static/sdk/Medbiz.zip>`_
 =========  ============  ===================  ==================================
 
 
@@ -64,13 +64,13 @@ Android API Level   23 - 30
     :column: + p-1
     SDK Sample App 화면
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    .. figure:: static/SDKSample.png
+    .. figure:: static/sdk/SDKSample.png
 
     ---
     :column: + p-1
     MEDBIZ Sample App 화면
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    .. figure:: static/MedbizSample.png
+    .. figure:: static/sdk/MedbizSample.png
 
 ------------------
 OAuth 2.0
@@ -95,7 +95,7 @@ RefreshToken)을 획득할 수 있다.
     requestAccessToken()
     ^^^^^^^
 
-    .. figure:: static/OAuth_1.png
+    .. figure:: static/sdk/OAuth_1.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -146,7 +146,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     requestAccessTokenWithRefreshToken()
     ^^^^^^^
 
-    .. figure:: static/AccessTokenRefresh.png
+    .. figure:: static/sdk/AccessTokenRefresh.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -185,7 +185,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     userMe()
     ^^^^^^^
 
-    .. figure:: static/GetUserInfomation.png
+    .. figure:: static/sdk/GetUserInfomation.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -228,7 +228,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     findMuidByDevSerial()
     ^^^^^^^
 
-    .. figure:: static/Device_1.png
+    .. figure:: static/sdk/Device_1.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -260,7 +260,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     findMuidByDevSerial()
     ^^^^^^^
 
-    .. figure:: static/Device_1.png
+    .. figure:: static/sdk/Device_1.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -292,7 +292,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     addMyDevice()
     ^^^^^^^
 
-    .. figure:: static/Device_2.png
+    .. figure:: static/sdk/Device_2.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -355,7 +355,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     getMyDeviceList()
     ^^^^^^^
 
-    .. figure:: static/Device_3.png
+    .. figure:: static/sdk/Device_3.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -427,7 +427,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
     deleteMyDevice()
     ^^^^^^^
 
-    .. figure:: static/Device_4.png
+    .. figure:: static/sdk/Device_4.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -495,7 +495,7 @@ OneM2M
     createCin()
     ^^^^^^^
 
-    .. figure:: static/oneM2M_1.png
+    .. figure:: static/sdk/oneM2M_1.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -545,7 +545,7 @@ OneM2M
     데이터 전송 후, 데이터 확인
     ^^^^^^^
 
-    .. figure:: static/oneM2M_2.png
+    .. figure:: static/sdk/oneM2M_2.png
 
 
 ------------------
@@ -569,7 +569,7 @@ getUserMeButton.setOnClickListener, Drive Class 참조
     userMe()
     ^^^^^^^
 
-    .. figure:: static/Vfs_1.png
+    .. figure:: static/sdk/Vfs_1.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -611,7 +611,7 @@ cdHomeButton.setOnClickListener, Drive Class 참조
     cdHome()
     ^^^^^^^
 
-    .. figure:: static/Vfs_2.png
+    .. figure:: static/sdk/Vfs_2.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -662,7 +662,7 @@ lsButton.setOnClickListener, Drive Class 참조
     ls()
     ^^^^^^^
 
-    .. figure:: static/Vfs_3.png
+    .. figure:: static/sdk/Vfs_3.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -735,7 +735,7 @@ mkdirButton.setOnClickListener, Drive Class 참조
     mkdir()
     ^^^^^^^
 
-    .. figure:: static/Vfs_4.png
+    .. figure:: static/sdk/Vfs_4.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -786,7 +786,7 @@ cdButton.setOnClickListener, Drive Class 참조
     cd()
     ^^^^^^^
 
-    .. figure:: static/Vfs_5.png
+    .. figure:: static/sdk/Vfs_5.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
@@ -836,7 +836,7 @@ putButton.setOnClickListener, Drive Class 참조
     put()
     ^^^^^^^
 
-    .. figure:: static/Vfs_6.png
+    .. figure:: static/sdk/Vfs_6.png
 
     ---
     :column: col-lg-8 col-md-8 col-sm-8 p-1
