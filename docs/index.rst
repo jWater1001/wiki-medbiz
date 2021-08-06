@@ -45,9 +45,9 @@ MEDBIZ 디바이스 및 서비스 활용
 .. toctree::
     :maxdepth: 1
 
-    dev_and_service/application
+    dev_and_service/product_device
     dev_and_service/onem2m
-    dev_and_service/newone
+    dev_and_service/application
 
 ---------------------------
 튜토리얼
