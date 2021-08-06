@@ -35,6 +35,17 @@ MEDBIZ 응용 서비스
     application_service/healthcare_service
     application_service/cloud_drive_service
     application_service/local_drive_service
+    application_service/analysis1
+    application_service/analysis2
+
+------------------------------
+MEDBIZ 디바이스 및 서비스 활용
+------------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    
 
 ---------------------------
 MEDBIZ로 로그인
