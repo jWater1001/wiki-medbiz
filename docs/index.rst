@@ -45,53 +45,26 @@ MEDBIZ 디바이스 및 서비스 활용
 .. toctree::
     :maxdepth: 1
 
-    
 
 ---------------------------
-MEDBIZ로 로그인
----------------------------
-
-.. toctree::
-    :maxdepth: 1
-
-    login
-
----------------------------
-API
----------------------------
-
-.. toctree::
-    :maxdepth: 3
-
-    api/overview
-
----------------------------
-제품 관리
+튜토리얼
 ---------------------------
 
 .. toctree::
     :maxdepth: 1
 
-    product
+    tutorial/tutorial
 
 ---------------------------
-oneM2M
----------------------------
-
-.. toctree::
-    :maxdepth: 1
-
-    onem2m
-
-
----------------------------
-Analysis
+개발 자료
 ---------------------------
 
 .. toctree::
     :maxdepth: 1
 
-    analysis
+    dev_guide/login
+    dev_guide/api
+    dev_guide/sdk_android
 
 ---------------------------
 활용 가이드
@@ -111,23 +84,7 @@ Analysis
     medbizdev_using_guide/oauth_client
     medbizdev_using_guide/application
  
----------------------------
-튜토리얼
----------------------------
 
-.. toctree::
-    :maxdepth: 1
-
-    tutorial/tutorial
-
----------------------------
-개발 자료
----------------------------
-
-.. toctree::
-    :maxdepth: 1
-
-    sdk/overview
     
 ---------------------------
 Indices and tables

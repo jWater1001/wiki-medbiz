@@ -1,22 +1,18 @@
-=============
 MEDBIZ 로그인
-=============
+===============
 
-* `개요`_
-* `API 명세`_
-* `MEDBIZ 회원 프로필 조회 API 명세`_
+.. contents:: 목차
 
----------
 개요
 ---------
 MEDBIZ 로그인은 Oauth2.0 기반의 사용자 인증 기능을 제공해 MEDBIZ의 사용자 인증 기능을 이용할 수 있게 하는 서비스입니다.
 
 
-.. image:: ./_static/medbizid01.png
+.. image:: static/login/medbizid01.png
 
 MEDBIZ 아이디로 로그인을 통해 로그인하는 기본 절차는 다음과 같습니다.
 
-.. image:: ./_static/medbizid02.png
+.. image:: static/login/medbizid02.png
 
 1. 주요 기능
 
@@ -49,7 +45,6 @@ MEDBIZ 아이디로 로그인을 이용하기 위한 정보를 확인하고 등�
 
 - `oauth2.0 <https://oauth.net/>`_
 
----------
 API 명세
 ---------
 'MEDBIZ 아이디로 로그인 API는 MEDBIZ 로그인 인증 요청 API, 접근 토큰 발급/갱신/삭제 요청API로 구성되어 있습니다. 
@@ -229,7 +224,6 @@ AccessToken 값은 일부 특수문자가 포함되어 있기 때문에 GET Para
         "result":"success"
     }  
 
----------
 MEDBIZ 회원 프로필 조회 API 명세
 ---------
 MEDBIZ 로그인을 통해 인증받은 받고 정보 제공에 동의한 회원에 대해 회원 메일 주소, 닉네임, 생일, 이름, 성별 값을 조회할 수 있는 로그인 오픈 API입니다. 기존 REST API처럼 요청 URL과 요청 변수로 호출하는 방법은 동일하나, 

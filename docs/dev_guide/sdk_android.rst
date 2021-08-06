@@ -1,10 +1,8 @@
-=============
-개발 자료
-=============
+안드로이드 SDK
+================
 
 .. contents:: 목차
 
-----
 개요
 ----
 
@@ -15,8 +13,6 @@ MEDBIZ 플랫폼 연동을 위해 Android 기반 SDK를 활용하여 서비스�
     MEDBIZ 플랫폼에 Android SDK 활용을 위해서는 `디바이스 등록 <https://medbiz-user-guide.readthedocs.io/>`_
     과정과 `OAuth Client 등록 <https://medbiz-user-guide.readthedocs.io/>`_ 을 완료한 후 진행할 수 있습니다.
 
-
--------------
 SDK 및 샘플앱
 -------------
 
@@ -28,8 +24,6 @@ SDK 및 샘플앱
 20201113   안드로이드      SDK, 샘플용 앱        `MEDBIZ_Sample_App <static/Medbiz.zip>`_
 =========  ============  ===================  ==================================
 
-
-------------------
 앱개발 환경 구성
 ------------------
 
@@ -45,7 +39,6 @@ Android API Level   23 - 30
 지원 언어             Java
 ==================  ============
 
-------------------
 지원 기능 소개
 ------------------
 
@@ -72,12 +65,11 @@ Android API Level   23 - 30
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     .. figure:: static/MedbizSample.png
 
-------------------
 OAuth 2.0
 ------------------
 
 1. Login
-===============
+```````````````````
 
 해당 기능은 Android에서 Login API를 이용한 플랫폼 인증 기능을 수행한다.
 AuthenticationActivity -> OAuthClient 객체 생성 코드 참조
@@ -131,8 +123,8 @@ RefreshToken)을 획득할 수 있다.
             scope='device profile'
         }
 
-2. OAuth Token Refresh
-=========================
+1. OAuth Token Refresh
+`````````````````````````````````
 
 해당 기능은 OAuth AccessToken 만료 시에 RefreshToken을 통해 AccessToken을 재발급하는 기능을 구현한다.
 기존 인증 후, 리프레시 토큰으로 AccessToken 재발급
@@ -171,8 +163,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             scope='device profile'
         }
 
-3. User Infomation
-=========================
+1. User Infomation
+`````````````````````````````````
 
 해당 기능은 로그인 된 유저의 정보를 얻어오는 기능을 수행
 인증 완료 후 AccessToken 으로 요청
@@ -211,12 +203,11 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             authorities=ROLE_ADMIN,ROLE_USER
         }
 
-------------------
 디바이스 관리
 ------------------
 
 1. 장비 시리얼번호로 장비 MUID 찾기
-===================================================
+````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비의 시리얼번호와 장비 모델 MUID를 통해 플랫폼에서 사용하는 장비 MUID를 조회하는 API
 
@@ -248,7 +239,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         931c50f7f25b4754d2d84f1192738985
 
 1. 장비 시리얼번호로 장비 MUID 찾기
-===================================================
+````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비의 시리얼번호와 장비 모델 MUID를 통해 플랫폼에서 사용하는 장비 MUID를 조회하는 API
 
@@ -280,7 +271,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         931c50f7f25b4754d2d84f1192738985
 
 2. 사용자 계쩡에 장비 추가하기
-===================================================
+````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비 MUID를 로그인 된(AccessToken) 계정으로 등록하는 API
 
@@ -343,7 +334,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         }
 
 3. 사용자 계정에 등록된 장비리스트 조회
-===================================================
+````````````````````````````````````````
 
 해당 기능은 사용자 계정에 등록된 장비 리스트를 조회하는 API
 
@@ -415,7 +406,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         }
 
 4. 사용자 계정에 등록된 장비리스트 삭제
-===================================================
+````````````````````````````````````````
 
 해당 기능은 사용자 계정에 등록된 장비 리스트를 삭제하는 API
 
@@ -477,12 +468,11 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
                 deviceMacAddress='null'
             }
 
-------------------
 OneM2M
 ------------------
 
 1. 디바이스에서 발생된 데이터를 플랫폼으로 전송
-===================================================
+````````````````````````````````````````````````
 
 해당 기능은 장비에서 발생된 데이터를 Medbiz 플랫폼으로 보내는 API
 먼저 디바이스 정보 획득 후, 디바이스 정보와 데이터를 API를 사용해 전송
@@ -548,12 +538,11 @@ OneM2M
     .. figure:: static/oneM2M_2.png
 
 
-------------------
 VFS
 ------------------
 
 1. 유저 홈 경로 얻기
-===================================================
+````````````````````````````````````````````````
 
 해당 기능은 VFS 기능을 사용 전에 유저의 홈 경로(기준)를 알아내기 위해 사용
 먼저 로그인 인증(31페이지)을 수행 후 AccessToken을 획득하고 있어야 함
@@ -596,7 +585,7 @@ getUserMeButton.setOnClickListener, Drive Class 참조
             }
 
 2. 유저 홈 경로 이동
-===================================================
+````````````````````````````````````````````````
 
 유저의 홈 경로(기준)를 획득 후, 해당 홈 경로로 이동하는 기능
 기존에 생성된 ★의 “/home/{유저 계정명}” 로 경로 이동
@@ -647,7 +636,7 @@ cdHomeButton.setOnClickListener, Drive Class 참조
             }
 
 3. ls 기능을 통한 현재 경로 파일 탐색
-===================================================
+````````````````````````````````````````````````
 
 ★의 “Catalog-Id“ 의 경로, 즉 현재 경로에 존재하는파일 및 폴더를 검색
 
@@ -720,7 +709,7 @@ lsButton.setOnClickListener, Drive Class 참조
             D/VfsActivity: ====================== ls() Results  end  ======================
 
 4. mkdir 기능을 통한 디렉토리 생성
-===================================================
+````````````````````````````````````````````````
 
 ★의 “Catalog-Id“ 의 경로, 즉 홈 경로에 디렉토리를 생성한다.
 생성할 디렉토리 이름을 기입 후, 디렉토리 생성 버튼 터치
@@ -771,7 +760,7 @@ mkdirButton.setOnClickListener, Drive Class 참조
             }
 
 5. cd 기능을 통한 디렉토리 이동
-===================================================
+````````````````````````````````````````````````
 
 홈 경로(“/home/gemscrc”)에서 다른경로(“/home/gemscrc/sampleDir”)로의  이동을 위한 명령어다.
 이동 디렉토리이름을 기입한 후, 이동 버튼 터치 > Catalog-Id 변경됨을 알 수 있음
@@ -822,7 +811,7 @@ cdButton.setOnClickListener, Drive Class 참조
             }
 
 6. 파일(이미지) 선택 후, 파일 전송
-===================================================
+````````````````````````````````````````````````
 
 현 경로(“/home/gemscrc/sampleDir”, 5번에서 이동 된 Catalog-Id)로선택된 파일을 플랫폼 VFS로 전송한다.
 
