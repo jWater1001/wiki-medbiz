@@ -1,10 +1,32 @@
-========================
-헬스케어 서비스 예시
-========================
+헬스케어 서비스
+==================
 
 .. contents:: 목차
 
-------------------------
+헬스케어 서비스 - 위치
+---------------------------
+
+홈페이지의 "건강정보 > 헬스케어 서비스" 메뉴에서 등록한 단말에 관련된 서비스가 표시됩니다. 이러한 서비스로는 Dicom 뷰어 서비스, 당뇨 관리 서비스, 심혈관 관리 서비스, 호흡기 질환 관리 서비스 등이 있습니다.
+
+* 보유한 단말 또는 VFS 사용 여부에 따라 관련 서비스 제공
+
+
+.. figure:: static/healthcare_service/healthcare_service_all.png
+
+  [그림 1] 헬스케어 서비스 리스트 예시
+
+헬스케어 서비스 - 자세히보기
+--------------------------------
+
+각 서비스 항목에 있는 '자세히보기' 버튼을 누르면 애플리케이션 링크를 확인할 수 있습니다. 이 애플리케이션 링크를 클릭하여 해당 서비스를 이용할 수 있습니다.
+
+* 자세히 보기
+   - 서비스 상세 정보 확인 및 첨부 파일 다운이나 애플리케이션 링크 제공
+
+.. figure:: static/healthcare_service/healthcare_service_more.png
+
+  [그림 2] Dicom 뷰어 서비스의 자세히보기 창
+
 호흡기 질환 관리 서비스
 ------------------------
 
@@ -25,12 +47,11 @@
 
 * 공기 질 측정 디바이스 연동뿐만 아니라 호흡기 질환 진단 의료기기와 연동하여 다양한 사용자 맞춤 의료 정보 서비스를 제공합니다.실시간 기상데이터 및 사용자 정보를 바탕으로 환자의 상태를 분석 프로그래밍을 통해 정밀 분석하고 사용자 알맞은 정보를 서비스합니다.
 
-.. figure:: healthcare_service_example_files/figure001.png
+.. figure:: static/healthcare_service/figure001.png
 
   [그림 1] 호흡기 질환 관리 서비스
 
 
-------------------------
 당뇨 관리 서비스
 ------------------------
 
@@ -40,23 +61,21 @@
 
 * 분석된 데이터는 사용자 친화적인 GUI를 통해 환자 개인의 당뇨 관리를 도와 줍니다.
 
-.. figure:: healthcare_service_example_files/figure002.png
+.. figure:: static/healthcare_service/figure002.png
 
   [그림 2] 당뇨 관리 서비스
 
 
-------------------------
 다중 모니터링 서비스
 ------------------------
 
 * MEDBIZ는 다수의 디바이스에서 나오는 데이터를 각각의 구성원과 연결하여 데이터를 실시간으로 모니터링 가능합니다. 또한 다수의 사용자의 정보를 한 화면에서 모니터링 가능합니다.
 
-.. figure:: healthcare_service_example_files/figure003.png
+.. figure:: static/healthcare_service/figure003.png
 
   [그림 3] 다중 모니터링 서비스
 
 
-------------------------
 DICOM 뷰어 서비스
 ------------------------
 
@@ -66,12 +85,11 @@ DICOM 뷰어 서비스
 
 * DICOM 파일의 METADATA를 분류하여 관리하여 데이터 파일의 관리와 사용에 최적화된 성능을 제공합니다.
 
-.. figure:: healthcare_service_example_files/figure004.png
+.. figure:: static/healthcare_service/figure004.png
 
   [그림 4] DICOM 뷰어 서비스
 
 
-------------------------
 심혈관 질환 관리 서비스
 ------------------------
 
@@ -83,6 +101,6 @@ DICOM 뷰어 서비스
 
 * 사용자 개인의 목표를 설정하고, 해당 목표 달성을 위해 남은 수치를 표시해 줍니다.
 
-.. figure:: healthcare_service_example_files/figure005.png
+.. figure:: static/healthcare_service/figure005.png
 
   [그림 5] 심혈관 질환 관리 서비스

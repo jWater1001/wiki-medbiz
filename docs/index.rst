@@ -3,56 +3,89 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MEDBIZ 사용자 가이드
+==================================
+MEDBIZ 가이드
 ==================================
 
-MEDBID 소개
-***********************
+---------------------------
+소개
+---------------------------
+
 .. toctree::
     :maxdepth: 2
 
-    introduce
-    system_architecture
-    platform_service_model
-    
+    introduce/introduce
+
+---------------------------
+활용 우수 사례
+---------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    excellent/excellent
+
+---------------------------
+MEDBIZ 응용 서비스
+---------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    application_service/healthcare_service
+    application_service/cloud_drive_service
+    application_service/local_drive_service
+
+---------------------------
 MEDBIZ로 로그인
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     login
 
+---------------------------
 API
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 3
 
     api/overview
 
+---------------------------
 제품 관리
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     product
 
+---------------------------
 oneM2M
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     onem2m
 
 
+---------------------------
 Analysis
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     analysis
 
+---------------------------
 활용 가이드
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 2
 
@@ -67,24 +100,27 @@ Analysis
     medbizdev_using_guide/oauth_client
     medbizdev_using_guide/application
  
-
+---------------------------
 튜토리얼
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     tutorial/tutorial
 
+---------------------------
 개발 자료
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     sdk/overview
     
-
+---------------------------
 Indices and tables
-==================
+---------------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
