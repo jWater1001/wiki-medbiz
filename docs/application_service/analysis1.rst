@@ -23,7 +23,21 @@ JDL을 이용한 작업 절차는 아래 이미지와 같음
 
 아래는 JDL 명세서이다.
 
-.. image:: static/analysis/JDL_Specification.png
+.. code-block:: json
+
+    {
+        "outputs": ["작업 결과 파일 경로"],
+        "resource": "작업 소스코드 경로",
+        "inputs": ["작업에 필요한 기타 파일 경로"],
+        "arguments": [
+            "작업에 필요한 기타 인자"
+        ],
+        "ttl": "작업 유효 시간",
+        "withCpu": "작업에 CPU 자원 활용 가능 여부",
+        "withGpu": "작업에 GPU 자원 활용 가능 여부"
+    }
+
+위와 같이 resource, input, arguments, output의 4가지 구성요소를 갖는다.
 
 .. [1] VFS(Virtual File System) 클라우드 상위에서 JDL 이용방법
 
@@ -45,13 +59,13 @@ JDL을 이용한 작업 절차는 아래 이미지와 같음
 .. image:: static/analysis/vfs_jdl1.png
 
 - .jdl 형태의 파일 생성(빈파일을 생성하여 기입하여도 좋고, 로컬시스템에서 해당 내용을 작성하여서 업로드하여도 됨)
-    - resource : 작업에 사용될 모델 파일 경로
-    - inputs : 작업에 상요될 인풋 데이터 경로
-    - outputs : 작업을 통해 산출되는 아웃풋 데이터가 저장될 경로
 
 .. image:: static/analysis/vfs_jdl2.png
 
 - 마우스 우클릭을 통해 해당 .jdl 파일에 명세된 작업을 수행시킴
+
+.. image:: static/analysis/vfs_jdl3.png
+
 - 작업 현황 패이지에서 해당 작업아 완료 되었는지, 상태는 어떤지에 대한 로깅 확인
 
 
