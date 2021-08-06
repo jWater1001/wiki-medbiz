@@ -4,36 +4,26 @@
    contain the root `toctree` directive.
 
 ==================================
-MEDBIZ 가이드
+MEDBIZ 활용 가이드
 ==================================
 
----------------------------
-소개
----------------------------
-
 .. toctree::
-    :caption: 메렁메렁
-    :name: 이건이름이레여
-    :numbered:
-    :maxdepth: 2
+    :caption: 소개
+    :name: 소개
+    :maxdepth: 1
 
     introduce/introduce
 
----------------------------
-활용 우수 사례
----------------------------
-
 .. toctree::
-    :numbered:
+    :caption: 활용 우수 사례
+    :name: 활용 우수 사례
     :maxdepth: 1
 
     excellent/excellent
 
----------------------------
-MEDBIZ 응용 서비스
----------------------------
-
 .. toctree::
+    :caption: MEDBIZ 응용 서비스
+    :name: MEDBIZ 응용 서비스
     :maxdepth: 1
 
     application_service/healthcare_service
@@ -42,46 +32,30 @@ MEDBIZ 응용 서비스
     application_service/analysis1
     application_service/analysis2
 
-------------------------------
-MEDBIZ 디바이스 및 서비스 활용
-------------------------------
-
 .. toctree::
+    :caption: MEDBIZ 디바이스 및 서비스 활용
+    :name: MEDBIZ 디바이스 및 서비스 활용
     :maxdepth: 1
 
     dev_and_service/product_device
     dev_and_service/onem2m
     dev_and_service/application
 
----------------------------
-튜토리얼
----------------------------
-
 .. toctree::
+    :caption: 튜토리얼
+    :name: MED튜토리얼
     :maxdepth: 1
 
     tutorial/tutorial
 
----------------------------
-개발 자료
----------------------------
-
 .. toctree::
+    :caption: 개발 자료
+    :name: 개발 자료
     :maxdepth: 1
 
     dev_guide/login
     dev_guide/api
     dev_guide/sdk_android
-
----------------------------
-활용 가이드
----------------------------
-
-.. toctree::
-    :maxdepth: 1
-
-    medbizdev_using_guide/login_vendor
-    medbizdev_using_guide/oauth_client
     
 ---------------------------
 Indices and tables

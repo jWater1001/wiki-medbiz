@@ -270,7 +270,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         D/DeviceManageActivity: setFindMuidByDevSerialCallback() Result : 200
         931c50f7f25b4754d2d84f1192738985
 
-2. 사용자 계쩡에 장비 추가하기
+2. 사용자 계정에 장비 추가하기
 ````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비 MUID를 로그인 된(AccessToken) 계정으로 등록하는 API
