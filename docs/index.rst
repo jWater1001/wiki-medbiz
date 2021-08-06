@@ -3,88 +3,85 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MEDBIZ 사용자 가이드
+==================================
+MEDBIZ 가이드
 ==================================
 
-MEDBID 소개
-***********************
+---------------------------
+소개
+---------------------------
+
 .. toctree::
     :maxdepth: 2
 
-    introduce
-    system_architecture
-    platform_service_model
-    
-MEDBIZ로 로그인
-***********************
+    introduce/introduce
+
+---------------------------
+활용 우수 사례
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
-    login
+    excellent/excellent
 
-API
-***********************
-.. toctree::
-    :maxdepth: 3
+---------------------------
+MEDBIZ 응용 서비스
+---------------------------
 
-    api/overview
-
-제품 관리
-***********************
 .. toctree::
     :maxdepth: 1
 
-    product
+    application_service/healthcare_service
+    application_service/cloud_drive_service
+    application_service/local_drive_service
+    application_service/analysis1
+    application_service/analysis2
 
-oneM2M
-***********************
+------------------------------
+MEDBIZ 디바이스 및 서비스 활용
+------------------------------
+
 .. toctree::
     :maxdepth: 1
 
-    onem2m
+    dev_and_service/application
+    dev_and_service/onem2m
+    dev_and_service/newone
 
-
-Analysis
-***********************
-.. toctree::
-    :maxdepth: 1
-
-    analysis
-
-활용 가이드
-***********************
-.. toctree::
-    :maxdepth: 2
-
-    platform_using_guide_for_user/user_device_management
-    platform_using_guide_for_user/how_to_use_data
-    platform_using_guide_for_user/medbiz_healthcare_service
-    platform_using_guide_for_user/cloud_storage_using_guide
-    platform_using_guide_for_user/medbiz_drive_using_guide
-    platform_using_guide_for_user/analysis
-    medbizdev_using_guide/login_vendor
-    medbizdev_using_guide/product
-    medbizdev_using_guide/oauth_client
-    medbizdev_using_guide/application
- 
-
+---------------------------
 튜토리얼
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
     tutorial/tutorial
 
+---------------------------
 개발 자료
-***********************
+---------------------------
+
 .. toctree::
     :maxdepth: 1
 
-    sdk/overview
-    
+    dev_guide/login
+    dev_guide/api
+    dev_guide/sdk_android
 
+---------------------------
+활용 가이드
+---------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    medbizdev_using_guide/login_vendor
+    medbizdev_using_guide/oauth_client
+    
+---------------------------
 Indices and tables
-==================
+---------------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
