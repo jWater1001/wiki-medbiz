@@ -50,11 +50,11 @@ WORKFLOW
 
 .. image:: static/enterprise_list.png
 
-제품관리 - 4. 등록된 제품 관리 화면 > 제품 메니페스트 생성 클릭
+제품 관리 - 4. 등록된 제품 관리 화면 > 제품 메니페스트 생성 클릭
 
 .. image:: static/enterprise_edit.png
 
-제품관리  - 5. 제품의 메니페스트 생성하기 - 데이터 필드명 및 설명 기입
+제품 관리 - 5. 제품의 메니페스트 생성하기 - 데이터 필드명 및 설명 기입
 
 .. [1] 메니페스트(Manifest)
     - 제품의 특성을 나타내는 정보
@@ -67,31 +67,31 @@ WORKFLOW
 
 .. image:: static/enterprise_manifest.png
 
-제품관리  - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 1
+제품 관리 - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 1
 
 .. image:: static/enterprise_manifest_fields.png
 
-제품관리  - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 2
+제품 관리 - 7. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 2
 
-.. image:: static/enterprise_manifest_Fields_modal.png
+.. image:: static/enterprise_manifest_fields_modal.png
 
-제품 관리 - 6. 제품 메니페스트 생성하기 - 선택된 데이터 파라미터 확인 및 등록
+제품 관리 - 8. 제품 메니페스트 생성하기 - 선택된 데이터 파라미터 확인 및 등록
 
-.. image:: static/enterprise_manifest_parameter_check.png
+.. image:: static/enterprise_manifest_fields_modal.png
 
-제품 관리 - 6. 제품 메니페스트 생성하기 - 제품에 등록된 데이터 파라미터 및 MUID 확인
+제품 관리 - 9. 제품 메니페스트 생성하기 - 제품에 등록된 데이터 파라미터 및 MUID 확인
 
 .. image:: static/enterprise_manifest_parameter_check_info.png
 
-제품 관리 - 7. 제품 디바이스 추가하기 1
+제품 관리 - 10. 제품 디바이스 추가하기 1
 
 .. image:: static/enterprise_device.png
 
-제품 관리 - 7. 제품 디바이스 추가하기 2
+제품 관리 - 11. 제품 디바이스 추가하기 2
 
 .. image:: static/enterprise_device_serial.png
 
-제품 관리 - 7. 제품 디바이스 추가확인
+제품 관리 - 12. 제품 디바이스 추가확인
 
 .. image:: static/enterprise_device_table.png
 
