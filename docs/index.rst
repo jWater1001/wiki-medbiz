@@ -45,6 +45,36 @@ MEDBIZ 디바이스 및 서비스 활용
 .. toctree::
     :maxdepth: 1
 
+    dev_and_service/application
+    dev_and_service/onem2m
+    dev_and_service/newone
+
+---------------------------
+MEDBIZ로 로그인
+---------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    login
+
+---------------------------
+API
+---------------------------
+
+.. toctree::
+    :maxdepth: 3
+
+    api/overview
+
+---------------------------
+제품 관리
+---------------------------
+
+.. toctree::
+    :maxdepth: 1
+
+    product
 
 ---------------------------
 튜토리얼
@@ -83,8 +113,6 @@ MEDBIZ 디바이스 및 서비스 활용
     medbizdev_using_guide/product
     medbizdev_using_guide/oauth_client
     medbizdev_using_guide/application
- 
-
     
 ---------------------------
 Indices and tables

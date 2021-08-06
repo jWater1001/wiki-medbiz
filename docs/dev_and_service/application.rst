@@ -17,14 +17,14 @@ Application 등록
 
 2. 상단에 'Applications' 메뉴를 클릭하고, 좌측에 '내 애플리케이션' 메뉴를 클릭하여, 등록된 앱을 확인한다.
 
-   .. figure:: application_files/new_app_03_check_my_app.png
+   .. figure:: static/new_app_03_check_my_app.png
 
       "Applications > 내 애플리케이션"
 
 
 3. 좌측에 '애플리케이션 등록' 메뉴를 클릭하면, '애플리케이션 등록' 페이지가 나온다.
 
-   .. figure:: application_files/new_app_05_app_reg_page.png
+   .. figure:: static/new_app_05_app_reg_page.png
 
    '애플리케이션 등록' 페이지
 
@@ -49,20 +49,20 @@ Application 등록
 
    다음 그림은 디바이스 선택 화면이다. 여기서는 'MedbizWatch'를 선택한다.
 
-   .. figure:: application_files/new_app_06_select_device.png
+   .. figure:: static/new_app_06_select_device.png
 
       "사용 범위 > Device" 라이도 버튼 클릭 화면: 앱이 필요로 하는 특정 디바이스를 선택
 
    다음 그림은 '애플리케이션 등록' 페이지에 MedbizWatchPM25 앱 등록을 위해 필요한 내용을 모두 기록한 화면이다.
 
-   .. figure:: application_files/new_app_07_fill_app_reg.png
+   .. figure:: static/new_app_07_fill_app_reg.png
 
       '애플리케이션 등록' 내용을 채운 화면
 
 
 5. 하단에 있는 '등록' 버튼을 클릭하여, 앱 등록이 성공하면, 등록된 앱이 화면에 보인다.
 
-   .. figure:: application_files/new_app_09_app_reg_pending.png
+   .. figure:: static/new_app_09_app_reg_pending.png
 
       앱 등록 성공, PENDING 상태
 
@@ -78,7 +78,7 @@ Application(이하 App 또는 앱)을 등록한 후에는 PENDING 상태이다. 
 
 1. "Applications > 내 애플리케이션" 메뉴로 이동하면, 등록한 MedbizWatchPM25 앱이 보인다.
 
-   .. figure:: application_files/new_app_09_app_reg_pending.png
+   .. figure:: static/new_app_09_app_reg_pending.png
 
       등록한 앱의 상태: PENDING
 
@@ -89,7 +89,7 @@ Application(이하 App 또는 앱)을 등록한 후에는 PENDING 상태이다. 
 
 3. 'ACTIVE' 상태로 변경되었다는 통지를 받으면, 다시, "Applications > 내 애플리케이션" 메뉴로 이동하여, 'ACTIVE' 상태로 변경되었는지 확인한다.
 
-   .. figure:: application_files/new_app_11_app_reg_active.png
+   .. figure:: static/new_app_11_app_reg_active.png
 
       등록한 앱의 상태: ACTIVE
 
@@ -108,7 +108,7 @@ Application(이하 App 또는 앱)을 등록한 후에는 PENDING 상태이다. 
 
    ※ MedbizWatchPM25 앱을 등록할 때, 
 
-   .. figure:: application_files/new_app_13_check_user_service.png
+   .. figure:: static/new_app_13_check_user_service.png
 
       등록한 OAuth Client 정보
 
@@ -118,7 +118,7 @@ Application(이하 App 또는 앱)을 등록한 후에는 PENDING 상태이다. 
    - 애플리케이션 파일: 개발자가 실행 파일 형태의 앱을 등록한 경우
    - 애플리케이션 링크: 개발자가 웹서비스 형태의 앱을 등록한 경우
 
-   .. figure:: application_files/new_app_15_show_user_service_details.png
+   .. figure:: static/new_app_15_show_user_service_details.png
 
       MedbizWatchPM25 앱의 '자세히보기' 화면
 
@@ -126,6 +126,6 @@ Application(이하 App 또는 앱)을 등록한 후에는 PENDING 상태이다. 
 4. MedbizWatchPM25 앱은 실행 파일 형태의 앱이다. 그러므로, '애플리케이션 파일' 항목의 링크를 다운로드한다.
    다운로드 하는 방법은 '애플리케이션 파일' 항목에 명시된 URL 을 복사(Copy)하여, 웹브라우저에 붙여넣기(Paste)한 후, 키보드에서 엔터키를 누른다.
 
-   .. figure:: application_files/new_app_17_download_app.png
+   .. figure:: static/new_app_17_download_app.png
 
       MedbizWatchPM25 앱을 다운로드한 화면
