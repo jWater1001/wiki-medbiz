@@ -29,6 +29,7 @@ Requirements
 Mandatory
 
 - reStructuredText 문법
+- 테이블 작성은 https://www.tablesgenerator.com/text_tables 에서 하면 편함
 
 Optinal
 
