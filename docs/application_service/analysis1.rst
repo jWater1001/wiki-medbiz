@@ -1,10 +1,7 @@
 MEDBIZ Platform 분석 기술
 ================================
 
-MEDBIZ Platform 분석 기능에  대한 내용 작성
-
-* `개요`_
-* `JDL(Job Description Language) 기반의 결과 도출`_
+.. contents:: 목차
 
 개요
 -----
@@ -19,9 +16,10 @@ JDL는 결과 도출을 위한 인터페이스로 어떠한 분석 모델과, �
 
 JDL을 이용한 작업 절차는 아래 이미지와 같음
 
-.. image:: static/analysis/JDL_Base_Analysis_Process.png
+.. figure:: static/analysis/JDL_Base_Analysis_Process.png
+    :width: 1600
 
-아래는 JDL 명세서이다.
+*아래는 JDL 명세서이다.*
 
 .. code-block:: json
 
@@ -45,7 +43,8 @@ JDL을 이용한 작업 절차는 아래 이미지와 같음
 
 - https://vfs.medbiz.or.kr 클라우드 페이지로 이동
 
-.. image:: static/analysis/vfs.medbiz.or.kr_homepage.png
+.. figure:: static/analysis/vfs.medbiz.or.kr_homepage.png
+    :width: 1600
 
 - 작업에 사용될 모델, 인풋 파일 데이터가 있다면 경로 정보, 아웃풋 파일 데이터가 있다면 경로 정보 등을 준비함
 
@@ -56,17 +55,34 @@ JDL을 이용한 작업 절차는 아래 이미지와 같음
     - 아웃풋 경로
         (/home/public/AnalysisService/brain-segmentation/result.pdf)
 
-.. image:: static/analysis/vfs_jdl1.png
+.. figure:: static/analysis/vfs_jdl1.png
+    :width: 1600
 
 - .jdl 형태의 파일 생성(빈파일을 생성하여 기입하여도 좋고, 로컬시스템에서 해당 내용을 작성하여서 업로드하여도 됨)
 
-.. image:: static/analysis/vfs_jdl2.png
+.. figure:: static/analysis/vfs_jdl2.png
+    :width: 1600
 
 - 마우스 우클릭을 통해 해당 .jdl 파일에 명세된 작업을 수행시킴
 
-.. image:: static/analysis/vfs_jdl3.png
+.. figure:: static/analysis/vfs_jdl3.png
+    :width: 1600
 
 - 작업 현황 패이지에서 해당 작업아 완료 되었는지, 상태는 어떤지에 대한 로깅 확인
+    - https://commany.medbiz.or.kr/demo/ 페이지로 이동
+    - 데이터 분석 >> 분석현황 >> 요청한 작업 목록 및 상태 조회 가능
+
++-----------------------------------------------+-----------------------------------------------+---------------------------------------------------+
+|.. figure:: static/analysis/jdl_company_1.png  |.. figure:: static/analysis/jdl_company_2.png  |.. figure:: static/analysis/jdl_company_3.png      |
+|    :width: 600                                |    :width: 600                                |    :width: 600                                    |
++-----------------------------------------------+-----------------------------------------------+---------------------------------------------------+
+
+- 완료된 작업은 JDL 아웃풋 경로에 따라 결과물이 가상 파일 시스템에 저장 될 수 있음
+
++-----------------------------------------------+-----------------------------------------------+
+|.. figure:: static/analysis/vfs_jdl4.png       |.. figure:: static/analysis/vfs_jdl5.png       |
+|    :width: 800                                |    :width: 800                                |
++-----------------------------------------------+-----------------------------------------------+
 
 
 .. [2] 기업용 페이지 > 데이터 분석 기능을 이용방법
