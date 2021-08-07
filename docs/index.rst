@@ -33,12 +33,12 @@ MEDBIZ 활용 가이드
     application_service/analysis2
 
 .. toctree::
-    :caption: MEDBIZ 디바이스 및 서비스 활용
-    :name: MEDBIZ 디바이스 및 서비스 활용
+    :caption: MEDBIZ 개발 가이드
+    :name: MEDBIZ 개발 가이드
     :maxdepth: 1
 
     dev_and_service/product_device
-    dev_and_service/onem2m
+    dev_and_service/oauth_client
     dev_and_service/application
 
 .. toctree::

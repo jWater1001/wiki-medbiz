@@ -793,9 +793,13 @@ VFS API 흐름
 .. warning::
 
   헬스 데이터 API의 사용을 위해서는 디바이스특성(manifest) 속성에서 기기에 해당하는 속성값을 입력한 경우에만 데이터의 변환이 이루어집니다.
+  디바이스 속성 등록에서 아래 속성표에 해당하는 파라미터 이름과 파라미터 단위로 선택을 해야만 헬스데이터에서 조회가 가능합니다.
 
-.. image:: static/api/health_data_flow.png
+.. warning::
+  헬스 데이터 API는 oAuth scope중 HEALTH를 포함한 클라이언트에서만 접근이 가능합니다.
+  :doc:`oauth client 가이드 <../dev_and_service/oauth_client>` 를 참조하여 API를 호출하는 oAuth 클라이언트가 해당 SCOPE를 포함하는지 확인하세요.
 
+.. figure:: static/api/health_data_flow.png
 
 헬스데이터 속성 표
 ------------------------------
@@ -864,15 +868,133 @@ VFS API 흐름
 +------------+----------------------------------------+---------------------+----------------------------+------------------------------------+----------------------+------+
 
 
+헬스데이터 전송
+------------------------------
+
+헬스데이터는 기기 속성에서 파라미터 이름과 파라미터 단위를 우선적으로 선택하여 제품을 등록한 후 디바이스가 데이터를 아래의 형태에 맞게 전송해야합니다.
+
+아래의 예를 참조하여 기기가 혈압계인 경우 전송하는 방법을 안내합니다.
+
+:doc:`제품 등록 및 Manifest 등록 <../dev_and_service/product_device>` 에서 제품 특성 선택시 데이터 속성표에 맞는 적절한 파라미터를 선택하세요
+
+데이터 생성
+````````````````````````````````
+
+아래의 샘플 oneM2M API를 통해 혈압데이터인 경우 데이터를 생성하는 예를 볼 수 있습니다.
+
+기본적으로는 oneM2M의 content instance 생성 과정과 동일하지만 m2m:cin.con key에 입력되는 value로 json 형태로 입력되어야 하며 해당 데이터들의 key값은 상기 속성표의 데이터 이름입니다.
+
+따라서 혈압 데이터는 아래와 같은 형태로 데이터가 전송되어야 합니다.
+
+**혈압 요청 예**
+
+    ======  ===========================================
+    방식     POST
+    url     :code:`https://onem2m.medbiz.or.kr/Mobius/{deviceMUID}/fields/{fieldName}`
+    header  X-M2M-RI : Bearer Token
+            X-M2M-Origin : {requestID}
+            Content-Type : application/json;ty=4
+    body    .. code:: json
+
+              {
+                "m2m:cin": {
+                  "con": {
+                    "systolic": 123,
+                    "diastolic" : 80,
+                    "map" : 85,
+                    "pulse" : 67
+                  }
+                }
+              }
+    ======  ===========================================
+
+  
+추가적으로 체온 데이터는 아래와 같은 형태로 데이터가 전송되어야 합니다.
+
+**체온 요청 예**
+
+======  ===========================================
+방식     POST
+url     :code:`https://onem2m.medbiz.or.kr/Mobius/{deviceMUID}/fields/{fieldName}`
+header  X-M2M-RI : Bearer Token
+        X-M2M-Origin : {requestID}
+        Content-Type : application/json;ty=4
+body    .. code:: json
+
+          {
+            "m2m:cin": {
+              "con": {
+                "temperature": 37.2
+              }
+            }
+          }
+======  ===========================================
+
 헬스데이터 API
 ------------------------------
 
-헬스데이터 개요 및 토큰 내용 추가
+지정한 기기 특성에 맞게 oneM2M을 통
+
 
 헬스데이터 조회 API
 ````````````````````````````````
 
-개인 헬스 데이터 조회 내용 추가
+* 사용자에게 디바이스를 등록하는 오픈API입니다. MEDBIZ 로그인으로 로그인한 사용자의 Oauth Token을 활용해 사용자에게 새로운 디바이스를 등록할 수 있습니다.
+
+**요청 예**
+
+    ======  ===========================================
+    방식     POST
+    url     :code:`https://openapi.medbiz.or.kr/v1/devices`
+    header  Authorization : Bearer Token
+    body    .. code:: json
+
+              {
+              "deviceNickName":"[디바이스 별명]"
+              }
+    ======  ===========================================
+
+**응답 예**
+
+  .. code-block:: json
+
+    {
+      "size": 10,
+      "page": 0,
+      "total": 1,
+      "first": true,
+      "last": true,
+      "items": [
+          {
+              "deviceMuid": "[디바이스 MUID]",
+              "deviceToken": "[디바이스 SECRET]",
+              "userRegistered": "[디바이스 사용자 등록여부]",
+              "enabled": "[디바이스 활성화 여부]",
+              "deviceModel": {
+                  "modelMuid": "[제품 MUID]",
+                  "modelSerialNumber": "[제품 시리얼번호]",
+                  "modelImageUri": "[제품 사진 URI]",
+                  "modelDuplicationRegistration": "[제품 등록가능 여부]",
+                  "modelName": "[제품 이름]",
+                  "modelDesc": "[제품 설명]",
+                  "modelDeveloperName": "[제품 생성자]",
+                  "modelInfoImageUri": "[제품 정보 이미지]",
+                  "modelBuyLink": "[제품 구매가능 링크]",
+                  "modelSize": "[제품 크기]",
+                  "modelWeight": "[제품 무게]",
+                  "status": "[제품 상태]",
+                  "modelCreateDate": "[제품 생성 시간]",
+                  "modelModifyDate": "[제품 수정 시간"]
+              },
+              "deviceSerialNumber": "[디바이스 시리얼 번호]",
+              "deviceNickname": "[디바이스 닉네임]",
+              "version": "[디바이스 매니페스트 버전]",
+              "deviceCreateDate": "[디바이스 생성 시간]",
+              "deviceModifyDate": "[디바이스 수정 시간"]
+          }
+      ]
+    }
+
 
 헬스데이터 공유 API
 ````````````````````````````````
