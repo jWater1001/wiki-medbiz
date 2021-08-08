@@ -1,8 +1,6 @@
 안드로이드 SDK
 ================
 
-.. contents:: 목차
-
 개요
 ----
 
@@ -123,7 +121,8 @@ RefreshToken)을 획득할 수 있다.
             scope='device profile'
         }
 
-1. OAuth Token Refresh
+
+2. OAuth Token Refresh
 `````````````````````````````````
 
 해당 기능은 OAuth AccessToken 만료 시에 RefreshToken을 통해 AccessToken을 재발급하는 기능을 구현한다.
@@ -163,7 +162,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             scope='device profile'
         }
 
-1. User Infomation
+
+3. User Infomation
 `````````````````````````````````
 
 해당 기능은 로그인 된 유저의 정보를 얻어오는 기능을 수행
@@ -203,6 +203,7 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             authorities=ROLE_ADMIN,ROLE_USER
         }
 
+
 디바이스 관리
 ------------------
 
@@ -238,7 +239,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         D/DeviceManageActivity: setFindMuidByDevSerialCallback() Result : 200
         931c50f7f25b4754d2d84f1192738985
 
-1. 장비 시리얼번호로 장비 MUID 찾기
+
+2. 장비 시리얼번호로 장비 MUID 찾기
 ````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비의 시리얼번호와 장비 모델 MUID를 통해 플랫폼에서 사용하는 장비 MUID를 조회하는 API
@@ -270,7 +272,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
         D/DeviceManageActivity: setFindMuidByDevSerialCallback() Result : 200
         931c50f7f25b4754d2d84f1192738985
 
-2. 사용자 계정에 장비 추가하기
+
+3. 사용자 계정에 장비 추가하기
 ````````````````````````````````````
 
 해당 기능은 Medbiz 플랫폼에 등록된 장비 MUID를 로그인 된(AccessToken) 계정으로 등록하는 API
@@ -333,7 +336,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             deviceMacAddress='null'
         }
 
-3. 사용자 계정에 등록된 장비리스트 조회
+
+4. 사용자 계정에 등록된 장비리스트 조회
 ````````````````````````````````````````
 
 해당 기능은 사용자 계정에 등록된 장비 리스트를 조회하는 API
@@ -405,7 +409,8 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
             ]
         }
 
-4. 사용자 계정에 등록된 장비리스트 삭제
+
+5. 사용자 계정에 등록된 장비리스트 삭제
 ````````````````````````````````````````
 
 해당 기능은 사용자 계정에 등록된 장비 리스트를 삭제하는 API
@@ -468,10 +473,11 @@ MainActivity -> tokenRefreshButton.setOnClickListener -> Code -> requestAccessTo
                 deviceMacAddress='null'
             }
 
+
 OneM2M
 ------------------
 
-1. 디바이스에서 발생된 데이터를 플랫폼으로 전송
+6. 디바이스에서 발생된 데이터를 플랫폼으로 전송
 ````````````````````````````````````````````````
 
 해당 기능은 장비에서 발생된 데이터를 Medbiz 플랫폼으로 보내는 API
@@ -584,6 +590,7 @@ getUserMeButton.setOnClickListener, Drive Class 참조
                 authorities=[ROLE_USER, ROLE_DEVELOPER, ROLE_VENDOR]
             }
 
+
 2. 유저 홈 경로 이동
 ````````````````````````````````````````````````
 
@@ -634,6 +641,7 @@ cdHomeButton.setOnClickListener, Drive Class 참조
                 ownerGroup='null',
                 available=true
             }
+
 
 3. ls 기능을 통한 현재 경로 파일 탐색
 ````````````````````````````````````````````````
@@ -708,6 +716,7 @@ lsButton.setOnClickListener, Drive Class 참조
             }
             D/VfsActivity: ====================== ls() Results  end  ======================
 
+
 4. mkdir 기능을 통한 디렉토리 생성
 ````````````````````````````````````````````````
 
@@ -759,6 +768,7 @@ mkdirButton.setOnClickListener, Drive Class 참조
                 available=true
             }
 
+
 5. cd 기능을 통한 디렉토리 이동
 ````````````````````````````````````````````````
 
@@ -809,6 +819,7 @@ cdButton.setOnClickListener, Drive Class 참조
                 ownerGroup='null',
                 available=true
             }
+
 
 6. 파일(이미지) 선택 후, 파일 전송
 ````````````````````````````````````````````````
