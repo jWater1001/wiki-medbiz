@@ -1,6 +1,6 @@
-========
+==========
 Tutorial
-========
+==========
 
 혈압계를 개발하는 업체가 MEDBIZ 플랫폼에 디바이스를 연동하는 과정을 아래의 순서에 따라 직접 따라하며 플랫폼과 연동하는 방법을 알아볼 수 있습니다.
 
@@ -22,7 +22,13 @@ WORKFLOW
     먼저 MEDBIZ의 회원이 되어야 합니다.
     `여기 <https://medbiz.or.kr>`_ 에서 MEDBIZ에 회원가입을 해주세요
 
-흐름도 추가 필요
+    회원가입 후, 개발자 사이트에 접속합니다.
+    로그인하여 제품등록, 디바이스 등록 등 다음과 같은 절차로 진행합니다.
+
+.. image:: static/flowchart/medbiz_flowchart.png
+
+따라하기
+*********
 
 .. note::
 
@@ -31,30 +37,25 @@ WORKFLOW
     각 단계별로 등록되는 내용은 다음과 같습니다.
 
 
-.. image:: ./_static/tutorial/enterprise_main_login.png
-
-따라하기
-*********
-
 #. 제품 관리
 
 제품 관리 - 1. Medbiz Developer 사이트 접속(https://auth.medbiz.or.kr/login) 계정으로  로그인
 
-.. image:: ./_static/tutorial/enterprise_main_login.png
+.. image:: static/enterprise_main_login.png
 
 제품 관리 - 2. 제품을 등록하기 위해 제품 정보를 기입 후, 등록 클릭
 
-.. image:: ./_static/tutorial/enterprise_product.png
+.. image:: static/enterprise_product.png
 
 제품 관리 - 3. 내 제품에서 등록된 내용 확인
 
-.. image:: ./_static/tutorial/enterprise_list.png
+.. image:: static/enterprise_list.png
 
-제품관리 - 4. 등록된 제품 관리 화면 > 제품 메니페스트 생성 클릭
+제품 관리 - 4. 등록된 제품 관리 화면 > 제품 메니페스트 생성 클릭
 
-.. image:: ./_static/tutorial/enterprise_edit.png
+.. image:: static/enterprise_edit.png
 
-제품관리  - 5. 제품의 메니페스트 생성하기 - 데이터 필드명 및 설명 기입
+제품 관리 - 5. 제품의 메니페스트 생성하기 - 데이터 필드명 및 설명 기입
 
 .. [1] 메니페스트(Manifest)
     - 제품의 특성을 나타내는 정보
@@ -65,54 +66,57 @@ WORKFLOW
     - 파라미터는 관리자가 관리함(신규 파라미터 추가 시, 관리자 연락)
     - 메타 데이터화를 원치 않거나 기업에서 임의로 데이터를 설계하는 경우에는 기존에 있는 custom 파라미터를 사용
 
-.. image:: ./_static/tutorial/enterprise_manifest.png
+.. image:: static/enterprise_manifest.png
 
-제품관리  - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 1
+제품 관리 - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 1
 
-.. image:: ./_static/tutorial/enterprise_manifest_Fields.png
+.. image:: static/enterprise_manifest_fields.png
 
-제품관리  - 6. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 2
+제품 관리 - 7. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 2
 
-.. image:: ./_static/tutorial/enterprise_manifest_Fields_modal.png
+ .. 파라미터 검토
+      - medbiz의 기본 파라미터 값과 비교하여 제품의 파라미터 값이 존재하지 않으면 문의하기 게시판을 통해 등록을 요청합니다.
 
-제품 관리 - 6. 제품 메니페스트 생성하기 - 선택된 데이터 파라미터 확인 및 등록
+.. image:: static/enterprise_manifest_fields_modal.png
 
-.. image:: ./_static/tutorial/enterprise_manifest_parameter_check.png
+제품 관리 - 8. 제품 메니페스트 생성하기 - 선택된 데이터 파라미터 확인 및 등록
 
-제품 관리 - 6. 제품 메니페스트 생성하기 - 제품에 등록된 데이터 파라미터 및 MUID 확인
+.. image:: static/enterprise_manifest_parameter_check.png
 
-.. image:: ./_static/tutorial/enterprise_manifest_parameter_check_info.png
+제품 관리 - 9. 제품 메니페스트 생성하기 - 제품에 등록된 데이터 파라미터 및 MUID 확인
 
-제품 관리 - 7. 제품 디바이스 추가하기 1
+.. image:: static/enterprise_manifest_parameter_check_info.png
 
-.. image:: ./_static/tutorial/enterprise_device.png
+제품 관리 - 10. 제품 디바이스 추가하기 1
 
-제품 관리 - 7. 제품 디바이스 추가하기 2
+.. image:: static/enterprise_device.png
 
-.. image:: ./_static/tutorial/enterprise_device_serial.png
+제품 관리 - 11. 제품 디바이스 추가하기 2
 
-제품 관리 - 7. 제품 디바이스 추가확인
+.. image:: static/enterprise_device_serial.png
 
-.. image:: ./_static/tutorial/enterprise_device_table.png
+제품 관리 - 12. 제품 디바이스 추가확인
+
+.. image:: static/enterprise_device_table.png
 
 #. 인증 관리
 
 인증 관리 - 1. OAuth Client 등록하기
 
-.. image:: ./_static/tutorial/client/enterprise_client.png
+.. image:: static/client/enterprise_client.png
 
 인증 관리 - 2. OAuth Client 리스트 조회
 
-.. image:: ./_static/tutorial/client/enterprise_client_list.png
+.. image:: static/client/enterprise_client_list.png
 
 인증 관리 - 3. OAuth Client 정보 조회 및 수정
 
-.. image:: ./_static/tutorial/client/enterprise_client_edit.png
+.. image:: static/client/enterprise_client_edit.png
 
 #. 어플리케이션 개발
 
 .. note::
 
-    MEDBIZ 플랫폼에 Android SDK 활용을 위해서는 `여기 <https://medbiz-user-guide.readthedocs.io/>`_
+    MEDBIZ 플랫폼에 Android SDK 활용을 위해서는 `여기 <https://medbiz-user-guide.readthedocs.io/ko/latest/dev_guide/sdk_android.html>`_
     참조합니다.
 
