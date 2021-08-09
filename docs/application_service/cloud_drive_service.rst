@@ -24,16 +24,6 @@ Medbiz 클라우드 저장소는 사용자 아이디별 용량 제한이 있다.
 
   기본적으로 제공되는 클라우드 저장소 용량(Quota)은 1 GB 이며 추가할당을 원하는 경우 운영팀에 문의하여 변경할 수 있다.
 
-클라우드 저장소 메뉴
-``````````````````````````
-
-Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
- 
-  * 저장소 탐색기 : 내 클라우드 저장소 탐색
-  * 저장소 관리 : 내가 사용한 저장 공간 확인
-  * 저장소 공유 탐색기 : 나에게 공유된 저장소 폴더 탐색
-  * 데이터 검색 : 메타 정보 기반 클라우드 파일 검색
-
 저장소 탐색기
 ---------------------------
 
@@ -62,6 +52,8 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
      - 지원 파일: pdf, jpg, png, bmp 등
      - 이용 방법: 마우스 더블 클릭
 
+  * 파일 분석(Analaysis)
+
   * 폴더 공유(Share)
 
 이러한 기능들의 대부분은 선택한 파일에 대한 컨텍스트 메뉴(마우스 팝업 메뉴)를 통하여 이용할 수 있다.
@@ -72,14 +64,15 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
 
 저장소 탐색기의 레이아웃은 다음과 같다.
 
-.. figure:: static/cloud_drive_service/storage_explorer_layout.png
+.. figure:: static/cloud_drive_service/layout.png
 
   < 저장소 탐색기 레이아웃 >
 
-1) 현재 작업 폴더 경로
-2) 메뉴 모음
-3) 폴더 탐색 창
-4) 폴더 내부 탐색 창
+1) 검색 창
+2) 현재 작업 폴더 경로
+3) 메뉴 모음
+4) 폴더 탐색 창
+5) 폴더 내부 탐색 창
 
 
 다. 저장소 탐색기 메뉴 모음
@@ -87,15 +80,26 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
 
 저장소 탐색기 오른쪽 위에 다음과 같은 기능을 하는 아이콘이 있다.
 
-.. |menu_view_layout_icon| image:: static/cloud_drive_service/menu_view_layout.png
+.. |menu_share_icon| image:: static/cloud_drive_service/menu_share.png
+.. |menu_view_layout_icon| image:: static/cloud_drive_service/menu_view.png
+.. |menu_menu_icon| image:: static/cloud_drive_service/menu_menu.png
 .. |menu_language_icon| image:: static/cloud_drive_service/menu_language.png
 .. |menu_new_folder| image:: static/cloud_drive_service/menu_new_folder.png
+.. |menu_new_file| image:: static/cloud_drive_service/menu_new_file.png
 .. |menu_upload_files| image:: static/cloud_drive_service/menu_upload_files.png
+.. |menu_share_icon2| image:: static/cloud_drive_service/menu_share2.png
+.. |menu_setting_icon| image:: static/cloud_drive_service/menu_setting.png
+.. |menu_logout_icon| image:: static/cloud_drive_service/menu_logout.png
 
+* |menu_share_icon| Shared Storage: 공유 저장소로 이동
 * |menu_view_layout_icon| List/Icons: 폴더 내부 탐색 창을 리스트/아이콘 모드로 보여줌
-* |menu_language_icon| Language: 메뉴 언어 변경(현재 영어(English)만 지원)
-* |menu_new_folder| New folder: 새 폴더 만들기
-* |menu_upload_files| Upload files: 파일 업로드, 여러 파일 업로드 가능
+* |menu_menu_icon| Menu:
+    - |menu_new_folder| New folder: 새 폴더 만들기
+    - |menu_new_file| New file: 새 파일 만들기
+    - |menu_upload_files| Upload files: 파일 업로드, 여러 파일 업로드 가능
+    - |menu_share_icon2| Shared Storage: 공유 저장소로 이동
+    - |menu_setting_icon| Setting: 관리로 이동
+    - |menu_logout_icon| Logout: 로그아웃
 
 
 (1) New folder(새 폴더 만들기)
@@ -109,7 +113,18 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
 
   < New Folder >
 
-(2) Upload files(파일 업로드)
+(2) New file(새 파일 만들기)
+''''''''''''''''''''''''''''''''''''''
+
+1) |menu_new_file| New file 메뉴를 클릭하면 New file 창이 나온다.
+2) File name 항목에 생성할 파일 이름을 적는다.
+3) Create 버튼을 누르면 파일이 생성된다.
+
+.. figure:: static/cloud_drive_service/new_file.png
+
+  < New File >
+
+(3) Upload files(파일 업로드)
 ''''''''''''''''''''''''''''''''''''''
 
 1) |menu_upload_files| Upload files 메뉴를 클릭하면 Upload files 창이 나온다.
@@ -129,6 +144,7 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
 * Copy: 파일 복사
 * Edit: 텍스트 파일 편집
 * Permissions: 파일 권한(Unix-like file system permissions) 변경
+* Analysis: 분석 (jdl 파일일 경우)
 * Delete: 파일 삭제
 
 .. figure:: static/cloud_drive_service/file_popup_menu.png
@@ -170,7 +186,17 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
   < 파일 편집 메뉴 >
 
 
-마. 폴더에 대한 컨텍스트 메뉴(마우스 팝업 메뉴)
+마. 파일 미리보기(Preview)
+``````````````````````````````````````````````````````
+
+저장소 탐색기는 pdf 문서 파일과 jpg, png 등 이미지 파일에 대한 미리보기 기능을 지원한다. 해당 파일을 마우스 더블 클릭하면 Item preview 창이 나오고, 여기서 미리보기 기능이 작동된다. Item preview 창을 닫을 때는 오른쪽에 있는 X 버튼을 클릭한다.
+
+.. figure:: static/cloud_drive_service/file_preview.png
+
+  < 파일 미리보기 >
+
+
+바. 폴더에 대한 컨텍스트 메뉴(마우스 팝업 메뉴)
 ``````````````````````````````````````````````````````
 
 * Open: 폴더 열기
@@ -185,58 +211,66 @@ Medbiz 홈페이지에 클라우드 저장소 메뉴는 다음과 같다.
   < 파일 팝업 메뉴 >
 
 
-바. 파일 미리보기(Preview)
-``````````````````````````````````````````````````````
-
-저장소 탐색기는 pdf 문서 파일과 jpg, png 등 이미지 파일에 대한 미리보기 기능을 지원한다. 해당 파일을 마우스 더블 클릭하면 Item preview 창이 나오고, 여기서 미리보기 기능이 작동된다. Item preview 창을 닫을 때는 오른쪽에 있는 X 버튼을 클릭한다.
-
-.. figure:: static/cloud_drive_service/file_preview.png
-
-  < 파일 미리보기 >
-
-
 저장소 공유
 ---------------------------
 
-Medbiz 클라우드 저장소의 특정 폴더를 특정 사용자에게 공유할 수 있다. 특정 폴더를 공유 받은 사용자는 ‘저장소 공유 탐색기’에서 그 폴더를 탐색할 수 있다.
+Medbiz 클라우드 저장소의 특정 폴더를 특정 사용자에게 공유할 수 있다. 특정 폴더를 공유 받은 사용자는 ‘공유저장소’에서 그 폴더를 탐색할 수 있다.
 
 가. 저장소 공유 설정
 ``````````````````````````````````````````````````````
 
 1) 공유하고자 하는 폴더를 가진 사용자의 계정으로 로그인한다.
-2) “클라우드저장소 > 저장소 탐색기” 메뉴를 클릭한다.
-3) 공유하고자 하는 폴더를 선택하고, 컨텍스트 메뉴를 띄운다.
-4) 컨텍스트 메뉴에서 Share 메뉴를 클릭하여 Share 창을 띄운다.
-5) Share 창에 공유 받을 사용자의 아이디(ID)를 지정한다.
-6) Share 창의 아래쪽에 Share 버튼을 클릭하면, 공유가 완료된다.
+2) 공유하고자 하는 폴더를 선택하고, 컨텍스트 메뉴를 띄운다.
+3) 컨텍스트 메뉴에서 Share 메뉴를 클릭하여 Share 창을 띄운다.
+4) Share 창에 공유 받을 사용자의 아이디(ID)를 지정한다.
+5) Share 창의 아래쪽에 Share 버튼을 클릭하면, 공유가 완료된다.
 
 .. figure:: static/cloud_drive_service/folder_share_menu.png
 
   < 저장소 공유 설정 >
  
 
-나. 공유된 저장소 사용
+나. 공유저장소 사용
 ``````````````````````````````````````````````````````
 
 1) 특정 폴더를 공유 받은 사용자 계정으로 로그인한다.
-2) “클라우드저장소 > 저장소 공유 탐색기” 메뉴를 클릭한다.
-3) 화면 왼쪽에 나에게 공유된 폴더가 보이고,   오른쪽에서 해당 폴더를 탐색할 수 있다.
+2) |menu_share_icon| 버튼을 클릭한다.
+3) 상단에서 공유된 폴더를 선택하여 탐색한다.
 
 .. figure:: static/cloud_drive_service/using_shared_storage.png
 
-  < 공유된 저장소 사용 >
+  < 공유저장소 사용 >
  
 
-데이터 검색
+저장소 관리
 ---------------------------
 
-메타 정보를 기반으로 클라우드 저장소의 파일을 검색할 수 있다.
+|menu_setting_icon| Setting 메뉴를 클릭하면 저장소 관리 창이 나온다.
 
-○ 일반 : 전체 데이터를 검색
+가. 공유현황
+``````````````````````````````````````````````````````
 
-○ Device 데이터 : Device 데이터만 검색
+권한 부여 내역과 권한 수신 내역을 확인하고 삭제할 수 있다.
 
-.. figure:: static/cloud_drive_service/data_search.png
+.. figure:: static/cloud_drive_service/setting_sharing.png
 
-  < 데이터 검색 >
+  < 공유현황 >
+
+나. 그룹
+``````````````````````````````````````````````````````
+
+본인 그룹에 참여한 사용자 목록과 본인이 참여한 그룹 목록을 확인하고 삭제할 수 있다. 그룹원 초대도 가능하다.
+
+.. figure:: static/cloud_drive_service/setting_group.png
+
+  < 그룹 >
+
+다. 통계
+``````````````````````````````````````````````````````
+
+저장소 사용 용량을 차트로 표시하고, 소유한 파일 수를 확인할 수 있다.
+
+.. figure:: static/cloud_drive_service/setting_statistics.png
+
+  < 통계 >
 
