@@ -29,9 +29,8 @@ MEDBIZ 활용 가이드
     application_service/healthcare_service
     application_service/cloud_drive_service
     application_service/local_drive_service
-    application_service/analysis1
-    application_service/analysis2
-
+    application_service/analysis
+    
 .. toctree::
     :caption: MEDBIZ 개발 가이드
     :name: MEDBIZ 개발 가이드
