@@ -14,6 +14,7 @@
 
 import sys
 import os
+import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -30,6 +31,7 @@ import os
 # ones.
 extensions = [
     'sphinx_panels',
+    'sphinx_rtd_theme',
 ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
