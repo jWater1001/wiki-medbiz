@@ -22,7 +22,13 @@ WORKFLOW
     먼저 MEDBIZ의 회원이 되어야 합니다.
     `여기 <https://medbiz.or.kr>`_ 에서 MEDBIZ에 회원가입을 해주세요
 
-흐름도 추가 필요
+    회원가입 후, 개발자 사이트에 접속합니다.
+    로그인하여 제품등록, 디바이스 등록 등 다음과 같은 절차로 진행합니다.
+
+.. image:: static/flowchart/medbiz_flowchart.png
+
+따라하기
+*********
 
 .. note::
 
@@ -30,11 +36,6 @@ WORKFLOW
     사전 등록 절차를 위해 MEDBIZ 사이트를 통해 1. 도메인 신청 2. 회원가입 및 로그인 3. 제품 등록 절차를 진행해야 하며,
     각 단계별로 등록되는 내용은 다음과 같습니다.
 
-
-.. image:: static/enterprise_main_login.png
-
-따라하기
-*********
 
 #. 제품 관리
 
@@ -73,11 +74,14 @@ WORKFLOW
 
 제품 관리 - 7. 제품 메니페스트 생성하기 - 데이터 파라미터 설정 2
 
+ .. 파라미터 검토
+      - medbiz의 기본 파라미터 값과 비교하여 제품의 파라미터 값이 존재하지 않으면 문의하기 게시판을 통해 등록을 요청합니다.
+
 .. image:: static/enterprise_manifest_fields_modal.png
 
 제품 관리 - 8. 제품 메니페스트 생성하기 - 선택된 데이터 파라미터 확인 및 등록
 
-.. image:: static/enterprise_manifest_fields_modal.png
+.. image:: static/enterprise_manifest_parameter_check.png
 
 제품 관리 - 9. 제품 메니페스트 생성하기 - 제품에 등록된 데이터 파라미터 및 MUID 확인
 
@@ -113,6 +117,6 @@ WORKFLOW
 
 .. note::
 
-    MEDBIZ 플랫폼에 Android SDK 활용을 위해서는 `여기 <https://medbiz-user-guide.readthedocs.io/>`_
+    MEDBIZ 플랫폼에 Android SDK 활용을 위해서는 `여기 <https://medbiz-user-guide.readthedocs.io/ko/latest/dev_guide/sdk_android.html>`_
     참조합니다.
 
