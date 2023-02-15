@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="sdk_android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/docs/dev_guide/static/sdk_android/ANDROID_MOBILE_SDK_20201112.zip!/" />
+      <root url="jar://$PROJECT_DIR$/docs/dev_guide/static/sdk_android/Medbiz.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
